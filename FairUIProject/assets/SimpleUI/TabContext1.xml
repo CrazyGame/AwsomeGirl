@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,300" remark="UI_TabController">
+  <displayList>
+    <component id="n1_gjwy" name="n1" src="gjwy70" fileName="Button1.xml" xy="32,51">
+      <Button title="ContextButton1"/>
+    </component>
+    <component id="n2_gjwy" name="n2" src="gjwy70" fileName="Button1.xml" xy="147,140">
+      <Button title="ContextButton2"/>
+    </component>
+  </displayList>
+</component>

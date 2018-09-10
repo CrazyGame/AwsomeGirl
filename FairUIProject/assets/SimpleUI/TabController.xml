@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,400">
+  <controller name="Tab" alias="TabController" exported="true" pages="0,,1,,2," selected="1"/>
+  <displayList>
+    <component id="n7_gjwy" name="n7" src="gjwy70" fileName="Button1.xml" xy="34,1">
+      <Button title="Tab1" controller="Tab" page="0"/>
+    </component>
+    <component id="n8_gjwy" name="n8" src="gjwy70" fileName="Button1.xml" xy="140,1">
+      <Button checked="true" title="Tab1" controller="Tab" page="1"/>
+    </component>
+    <component id="n10_gjwy" name="n10" src="gjwy70" fileName="Button1.xml" xy="254,2">
+      <Button title="Tab1" controller="Tab" page="2"/>
+    </component>
+    <component id="n11_gjwy" name="n11" src="gjwy71" fileName="TabContext1.xml" xy="0,53" size="400,300">
+      <gearDisplay controller="Tab" pages="0"/>
+    </component>
+  </displayList>
+</component>

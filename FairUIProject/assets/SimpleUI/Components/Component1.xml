@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1280,720">
+  <displayList>
+    <component id="n0_mab9" name="GreenButton" src="km3e6q" fileName="Components/Basic/GreenButton.xml" xy="563,136" size="208,195"/>
+    <component id="n3_mab9" name="n3" src="mab96w" fileName="Components/Basic/FrameWindow.xml" xy="196,152" size="841,434"/>
+    <component id="n5_mab9" name="n5" src="mab96x" fileName="Components/Basic/Component2.xml" xy="265,202" size="320,285"/>
+  </displayList>
+</component>
