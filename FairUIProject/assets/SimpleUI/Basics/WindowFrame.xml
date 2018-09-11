@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1136,640" adaptationTest="FitSize">
+  <displayList>
+    <image id="n10_hv92" name="BackGround" src="iicj8" fileName="ArtAsset/UI_Frame_Dark_Transparent.png" xy="0,0" size="1136,640">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n5_iicj" name="WindowArea" src="iicjd" fileName="ArtAsset/UI_Panel_Window.png" xy="0,60" size="1136,580">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n9_iicj" name="Title" src="iicjq" fileName="Basics/WindowTitle.xml" xy="0,0">
+      <relation target="" sidePair="width-width,top-top"/>
+    </component>
+    <component id="n2_iicj" name="closeButton" src="iicjm" fileName="Basics/GreenSmallButton.xml" xy="1082,0" size="55,55">
+      <relation target="n9_iicj" sidePair="right-right,top-top"/>
+    </component>
+  </displayList>
+</component>

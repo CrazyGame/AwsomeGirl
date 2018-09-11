@@ -9,7 +9,7 @@ namespace {packageName}
 
 		public const string URL = "{uiPath}";
 		
-		
+		public const string WindowKey = "{className}";
 
 		
 		public static {className} CreateInstance()
@@ -28,11 +28,54 @@ namespace {packageName}
 {content}
 		}
 	}
-	
+		
+
 	public class {className}Bundle: FairyGUIBundle
     {
-        public string BundleName { get { return "{uiPkgName}_fui.{className}".ToLower(); } }		
 		public string ResName { get { return "{className}"; } }
+		
+		public string WindowKeyName{get { return "{className}";} }
+    }
+
+     public class {className}UIMedia:UIMedia
+    {
+        public GComponent Inject()
+        {
+            {className} instace = {className}.CreateInstance();
+            new {className}Media().Init(instace);
+			return instace;
+        }
     }
 	
+	 public class {className}WindowName : WindowName
+    {
+        public string Key
+        {
+            get
+            {
+                return "{className}";
+            }
+        }
+    }
+	
+	 public partial class WindowNameFactory
+    {
+        public static WindowName Get{className}Name()
+        {
+            return new {className}WindowName();
+        }
+    }
+
+
+    public partial class {className}Media
+    {
+        {className} window;
+        public void Init({className} instace)
+        {
+            window = instace;
+			InitInstance(instace);
+        }
+		
+        partial void InitInstance({className} instace);		
+    }	
 }

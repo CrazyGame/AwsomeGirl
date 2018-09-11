@@ -1,229 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<packageDescription id="3616ktus" jpegQuality="80" compressPNG="true">
+<packageDescription id="wmafp3a9" jpegQuality="80" compressPNG="true">
   <resources>
-    <image id="i0s80" name="UI_Button_Standard_Green.png" path="/UI/" scale="9grid" scale9grid="15,17,30,34"/>
-    <image id="i0s81" name="UI_Button_Standard_Orange.png" path="/UI/" scale="9grid" scale9grid="15,17,30,34"/>
-    <image id="i0s82" name="UI_Button_Standard_Red.png" path="/UI/" scale="9grid" scale9grid="15,17,30,34"/>
-    <image id="i0s83" name="UI_Button_Standard_Sky.png" path="/UI/" scale="9grid" scale9grid="15,17,30,34"/>
-    <image id="i0s84" name="UI_Fill_Green.png" path="/UI/" scale="9grid" scale9grid="13,13,26,26"/>
-    <image id="i0s85" name="UI_Fill_Orange.png" path="/UI/" scale="9grid" scale9grid="13,13,26,26"/>
-    <image id="i0s86" name="UI_Fill_Red.png" path="/UI/" scale="9grid" scale9grid="13,13,26,26"/>
-    <image id="i0s87" name="UI_Fill_Sky.png" path="/UI/" scale="9grid" scale9grid="13,13,26,26"/>
-    <image id="i0s88" name="UI_Frame_Dark_Transparent.png" path="/UI/" scale="9grid" scale9grid="15,15,30,30"/>
-    <image id="i0s89" name="UI_Frame_Dark_White.png" path="/UI/" scale="9grid" scale9grid="15,15,30,30"/>
-    <image id="i0s8a" name="UI_Frame_Transparent.png" path="/UI/" scale="9grid" scale9grid="15,15,30,30"/>
-    <image id="i0s8b" name="UI_Frame_White.png" path="/UI/" scale="9grid" scale9grid="15,15,30,30"/>
-    <image id="i0s8c" name="UI_Panel_Content.png" path="/UI/" scale="9grid" scale9grid="20,20,40,40"/>
-    <image id="i0s8d" name="UI_Panel_Window.png" path="/UI/" scale="9grid" scale9grid="20,21,40,42"/>
-    <image id="i0s8e" name="UI_Tab_Active.png" path="/UI/" scale="9grid" scale9grid="20,20,40,40"/>
-    <image id="i0s8f" name="UI_Tab_Inactive.png" path="/UI/" scale="9grid" scale9grid="20,20,40,40"/>
-    <image id="km3e11" name="UI_Icon_Aim.png" path="/Icon1/"/>
-    <image id="km3e12" name="UI_Icon_AlarmOff.png" path="/Icon1/"/>
-    <image id="km3e13" name="UI_Icon_AlarmOn.png" path="/Icon1/"/>
-    <image id="km3e14" name="UI_Icon_Archer.png" path="/Icon1/"/>
-    <image id="km3e15" name="UI_Icon_ArrowDown.png" path="/Icon1/"/>
-    <image id="km3e16" name="UI_Icon_ArrowLeft.png" path="/Icon1/"/>
-    <image id="km3e17" name="UI_Icon_ArrowRight.png" path="/Icon1/"/>
-    <image id="km3e18" name="UI_Icon_ArrowUp.png" path="/Icon1/"/>
-    <image id="km3e19" name="UI_Icon_Attack.png" path="/Icon1/"/>
-    <image id="km3e1a" name="UI_Icon_Award.png" path="/Icon1/"/>
-    <image id="km3e1b" name="UI_Icon_Bag1.png" path="/Icon1/"/>
-    <image id="km3e1c" name="UI_Icon_Bomb.png" path="/Icon1/"/>
-    <image id="km3e1d" name="UI_Icon_Book.png" path="/Icon1/"/>
-    <image id="km3e1e" name="UI_Icon_Bookmark.png" path="/Icon1/"/>
-    <image id="km3e1f" name="UI_Icon_BtnDpad.png" path="/Icon1/"/>
-    <image id="km3e1g" name="UI_Icon_BtnDpadDirDown.png" path="/Icon1/"/>
-    <image id="km3e1h" name="UI_Icon_BtnDpadDirLeft.png" path="/Icon1/"/>
-    <image id="km3e1i" name="UI_Icon_BtnDpadDirRight.png" path="/Icon1/"/>
-    <image id="km3e1j" name="UI_Icon_BtnDpadDirUp.png" path="/Icon1/"/>
-    <image id="km3e1k" name="UI_Icon_BtnDpadHorizontal.png" path="/Icon1/"/>
-    <image id="km3e1l" name="UI_Icon_BtnDpadVertical.png" path="/Icon1/"/>
-    <image id="km3e1m" name="UI_Icon_BtnL1.png" path="/Icon1/"/>
-    <image id="km3e1n" name="UI_Icon_BtnL2.png" path="/Icon1/"/>
-    <image id="km3e1o" name="UI_Icon_BtnL3.png" path="/Icon1/"/>
-    <image id="km3e1p" name="UI_Icon_BtnPsCircle.png" path="/Icon1/"/>
-    <image id="km3e1q" name="UI_Icon_BtnPsCircleRound.png" path="/Icon1/"/>
-    <image id="km3e1r" name="UI_Icon_BtnPsCross.png" path="/Icon1/"/>
-    <image id="km3e1s" name="UI_Icon_BtnPsCrossRound.png" path="/Icon1/"/>
-    <image id="km3e1t" name="UI_Icon_BtnPsSquare.png" path="/Icon1/"/>
-    <image id="km3e1u" name="UI_Icon_BtnPsSquareRound.png" path="/Icon1/"/>
-    <image id="km3e1v" name="UI_Icon_BtnPsTriangle.png" path="/Icon1/"/>
-    <image id="km3e1w" name="UI_Icon_BtnPsTriangleRound.png" path="/Icon1/"/>
-    <image id="km3e1x" name="UI_Icon_BtnR1.png" path="/Icon1/"/>
-    <image id="km3e1y" name="UI_Icon_BtnR2.png" path="/Icon1/"/>
-    <image id="km3e1z" name="UI_Icon_BtnR3.png" path="/Icon1/"/>
-    <image id="km3e20" name="UI_Icon_Versus.png" path="/Icon1/"/>
-    <image id="km3e21" name="UI_Icon_Visible.png" path="/Icon1/"/>
-    <image id="km3e22" name="UI_Icon_Warning.png" path="/Icon1/"/>
-    <image id="km3e23" name="UI_Icon_Water.png" path="/Icon1/"/>
-    <image id="km3e24" name="UI_Icon_Wifi.png" path="/Icon1/"/>
-    <image id="km3e25" name="UI_Icon_WifiProblem.png" path="/Icon1/"/>
-    <image id="km3e26" name="UI_Icon_Wrench.png" path="/Icon1/"/>
-    <image id="km3e27" name="UI_Icon_ZoomIn.png" path="/Icon1/"/>
-    <image id="km3e28" name="UI_Icon_ZoomOut.png" path="/Icon1/"/>
-    <image id="km3e29" name="UI_Icon_InvCloak.png" path="/Icon4/"/>
-    <image id="km3e2a" name="UI_Icon_InvGloves.png" path="/Icon4/"/>
-    <image id="km3e2b" name="UI_Icon_InvHelmet.png" path="/Icon4/"/>
-    <image id="km3e2c" name="UI_Icon_Invisible.png" path="/Icon4/"/>
-    <image id="km3e2d" name="UI_Icon_InvPants.png" path="/Icon4/"/>
-    <image id="km3e2e" name="UI_Icon_InvPotion.png" path="/Icon4/"/>
-    <image id="km3e2f" name="UI_Icon_InvRing.png" path="/Icon4/"/>
-    <image id="km3e2g" name="UI_Icon_Key.png" path="/Icon4/"/>
-    <image id="km3e2h" name="UI_Icon_Leaf.png" path="/Icon4/"/>
-    <image id="km3e2i" name="UI_Icon_Like.png" path="/Icon4/"/>
-    <image id="km3e2j" name="UI_Icon_List.png" path="/Icon4/"/>
-    <image id="km3e2k" name="UI_Icon_Location.png" path="/Icon4/"/>
-    <image id="km3e2l" name="UI_Icon_LockLocked.png" path="/Icon4/"/>
-    <image id="km3e2m" name="UI_Icon_LockUnlocked.png" path="/Icon4/"/>
-    <image id="km3e2n" name="UI_Icon_Loop.png" path="/Icon4/"/>
-    <image id="km3e2o" name="UI_Icon_Mail.png" path="/Icon4/"/>
-    <image id="km3e2p" name="UI_Icon_Map.png" path="/Icon4/"/>
-    <image id="km3e2q" name="UI_Icon_Medal.png" path="/Icon4/"/>
-    <image id="km3e2r" name="UI_Icon_Menu.png" path="/Icon4/"/>
-    <image id="km3e2s" name="UI_Icon_Merge.png" path="/Icon4/"/>
-    <image id="km3e2t" name="UI_Icon_MicOff.png" path="/Icon4/"/>
-    <image id="km3e2u" name="UI_Icon_MicOn.png" path="/Icon4/"/>
-    <image id="km3e2v" name="UI_Icon_Mirror.png" path="/Icon4/"/>
-    <image id="km3e2w" name="UI_Icon_Moon.png" path="/Icon4/"/>
-    <image id="km3e2x" name="UI_Icon_MultiPlayer.png" path="/Icon4/"/>
-    <image id="km3e2y" name="UI_Icon_MusicOff.png" path="/Icon4/"/>
-    <image id="km3e2z" name="UI_Icon_MusicOn.png" path="/Icon4/"/>
-    <image id="km3e30" name="UI_Icon_NewPlayer.png" path="/Icon4/"/>
-    <image id="km3e31" name="UI_Icon_OnOff.png" path="/Icon4/"/>
-    <image id="km3e32" name="UI_Icon_Pause.png" path="/Icon4/"/>
-    <image id="km3e33" name="UI_Icon_Percentage.png" path="/Icon4/"/>
-    <image id="km3e34" name="UI_Icon_Photo.png" path="/Icon4/"/>
-    <image id="km3e35" name="UI_Icon_Play.png" path="/Icon4/"/>
-    <image id="km3e36" name="UI_Icon_PlayBackwards.png" path="/Icon4/"/>
-    <image id="km3e37" name="UI_Icon_Plus.png" path="/Icon4/"/>
-    <image id="km3e38" name="UI_Icon_Question.png" path="/Icon4/"/>
-    <image id="km3e39" name="UI_Icon_Refresh.png" path="/Icon4/"/>
-    <image id="km3e3a" name="UI_Icon_Reload.png" path="/Icon4/"/>
-    <image id="km3e3b" name="UI_Icon_Results.png" path="/Icon4/"/>
-    <image id="km3e3c" name="UI_Icon_Return.png" path="/Icon4/"/>
-    <image id="km3e3d" name="UI_Icon_Rewind.png" path="/Icon4/"/>
-    <image id="km3e3e" name="UI_Icon_RotateLeft.png" path="/Icon4/"/>
-    <image id="km3e3f" name="UI_Icon_RotateRight.png" path="/Icon4/"/>
-    <image id="km3e3g" name="UI_Icon_Sale.png" path="/Icon4/"/>
-    <image id="km3e3h" name="UI_Icon_Sandclock.png" path="/Icon4/"/>
-    <image id="km3e3i" name="UI_Icon_Save1.png" path="/Icon4/"/>
-    <image id="km3e3j" name="UI_Icon_Save2.png" path="/Icon4/"/>
-    <image id="km3e3k" name="UI_Icon_Search.png" path="/Icon4/"/>
-    <image id="km3e3l" name="UI_Icon_Select.png" path="/Icon4/"/>
-    <image id="km3e3m" name="UI_Icon_Settings.png" path="/Icon4/"/>
-    <image id="km3e3n" name="UI_Icon_Share.png" path="/Icon4/"/>
-    <image id="km3e3o" name="UI_Icon_ShoppingCart.png" path="/Icon4/"/>
-    <image id="km3e3p" name="UI_Icon_Shuffle.png" path="/Icon4/"/>
-    <image id="km3e3q" name="UI_Icon_SinglePlayer.png" path="/Icon4/"/>
-    <image id="km3e3r" name="UI_Icon_Skip.png" path="/Icon4/"/>
-    <image id="km3e3s" name="UI_Icon_SkipBack.png" path="/Icon4/"/>
-    <image id="km3e3t" name="UI_Icon_Skull.png" path="/Icon4/"/>
-    <image id="km3e3u" name="UI_Icon_Sleep.png" path="/Icon4/"/>
-    <image id="km3e3v" name="UI_Icon_Sliders.png" path="/Icon4/"/>
-    <image id="km3e3w" name="UI_Icon_SmileyDead.png" path="/Icon4/"/>
-    <image id="km3e3x" name="UI_Icon_SmileyHappy.png" path="/Icon4/"/>
-    <image id="km3e3y" name="UI_Icon_SmileyLaughing.png" path="/Icon4/"/>
-    <image id="km3e3z" name="UI_Icon_SmileyNeutral.png" path="/Icon4/"/>
-    <image id="km3e40" name="UI_Icon_SmileyUnhappy.png" path="/Icon4/"/>
-    <image id="km3e41" name="UI_Icon_SocialFacebook.png" path="/Icon4/"/>
-    <image id="km3e42" name="UI_Icon_SocialInstagram.png" path="/Icon4/"/>
-    <image id="km3e43" name="UI_Icon_SocialTwitter1.png" path="/Icon4/"/>
-    <image id="km3e44" name="UI_Icon_SocialTwitter2.png" path="/Icon4/"/>
-    <image id="km3e45" name="UI_Icon_SocialYoutube.png" path="/Icon4/"/>
-    <image id="km3e46" name="UI_Icon_SoundOff.png" path="/Icon4/"/>
-    <image id="km3e47" name="UI_Icon_SoundOn.png" path="/Icon4/"/>
-    <image id="km3e48" name="UI_Icon_Star.png" path="/Icon4/"/>
-    <image id="km3e49" name="UI_Icon_StarEmpty.png" path="/Icon4/"/>
-    <image id="km3e4a" name="UI_Icon_Stats.png" path="/Icon4/"/>
-    <image id="km3e4b" name="UI_Icon_Stop.png" path="/Icon4/"/>
-    <image id="km3e4c" name="UI_Icon_Stopwatch.png" path="/Icon4/"/>
-    <image id="km3e4d" name="UI_Icon_Sun.png" path="/Icon4/"/>
-    <image id="km3e4e" name="UI_Icon_Swap.png" path="/Icon4/"/>
-    <image id="km3e4f" name="UI_Icon_BtnXboxA.png" path="/Icon2/"/>
-    <image id="km3e4g" name="UI_Icon_BtnXboxARound.png" path="/Icon2/"/>
-    <image id="km3e4h" name="UI_Icon_BtnXboxB.png" path="/Icon2/"/>
-    <image id="km3e4i" name="UI_Icon_BtnXboxBRound.png" path="/Icon2/"/>
-    <image id="km3e4j" name="UI_Icon_BtnXboxX.png" path="/Icon2/"/>
-    <image id="km3e4k" name="UI_Icon_BtnXboxXRound.png" path="/Icon2/"/>
-    <image id="km3e4l" name="UI_Icon_BtnXboxY.png" path="/Icon2/"/>
-    <image id="km3e4m" name="UI_Icon_BtnXboxYRound.png" path="/Icon2/"/>
-    <image id="km3e4n" name="UI_Icon_Camera.png" path="/Icon2/"/>
-    <image id="km3e4o" name="UI_Icon_CardClubs.png" path="/Icon2/"/>
-    <image id="km3e4p" name="UI_Icon_CardDiamonds.png" path="/Icon2/"/>
-    <image id="km3e4q" name="UI_Icon_CardHearts.png" path="/Icon2/"/>
-    <image id="km3e4r" name="UI_Icon_CardSpades.png" path="/Icon2/"/>
-    <image id="km3e4s" name="UI_Icon_Chainlink.png" path="/Icon2/"/>
-    <image id="km3e4t" name="UI_Icon_Chat.png" path="/Icon2/"/>
-    <image id="km3e4u" name="UI_Icon_Checkbox.png" path="/Icon2/"/>
-    <image id="km3e4v" name="UI_Icon_Close.png" path="/Icon2/"/>
-    <image id="km3e4w" name="UI_Icon_Cloud.png" path="/Icon2/"/>
-    <image id="km3e4x" name="UI_Icon_Coin.png" path="/Icon2/"/>
-    <image id="km3e4y" name="UI_Icon_Compass.png" path="/Icon2/"/>
-    <image id="km3e4z" name="UI_Icon_Confirm.png" path="/Icon2/"/>
-    <image id="km3e50" name="UI_Icon_Crown.png" path="/Icon2/"/>
-    <image id="km3e51" name="UI_Icon_CurrencDollar.png" path="/Icon2/"/>
-    <image id="km3e52" name="UI_Icon_CurrencyBitcoin.png" path="/Icon2/"/>
-    <image id="km3e53" name="UI_Icon_CurrencyEuro.png" path="/Icon2/"/>
-    <image id="km3e54" name="UI_Icon_CurrencyPound.png" path="/Icon2/"/>
-    <image id="km3e55" name="UI_Icon_CurrencyRuble.png" path="/Icon2/"/>
-    <image id="km3e56" name="UI_Icon_CurrencyWon.png" path="/Icon2/"/>
-    <image id="km3e57" name="UI_Icon_CurrencyYen.png" path="/Icon2/"/>
-    <image id="km3e58" name="UI_Icon_Curves.png" path="/Icon2/"/>
-    <image id="km3e59" name="UI_Icon_Defend.png" path="/Icon2/"/>
-    <image id="km3e5a" name="UI_Icon_Delete.png" path="/Icon2/"/>
-    <image id="km3e5b" name="UI_Icon_DeviceComputer.png" path="/Icon2/"/>
-    <image id="km3e5c" name="UI_Icon_DevicePhone.png" path="/Icon2/"/>
-    <image id="km3e5d" name="UI_Icon_Edit.png" path="/Icon2/"/>
-    <image id="km3e5e" name="UI_Icon_Trophy.png" path="/Icon2/"/>
-    <image id="km3e5f" name="UI_Icon_TurnAround.png" path="/Icon2/"/>
-    <image id="km3e5g" name="UI_Icon_TurnLeft.png" path="/Icon2/"/>
-    <image id="km3e5h" name="UI_Icon_TurnRight.png" path="/Icon2/"/>
-    <image id="km3e5i" name="UI_Icon_Energy.png" path="/Icon3/"/>
-    <image id="km3e5j" name="UI_Icon_Exit.png" path="/Icon3/"/>
-    <image id="km3e5k" name="UI_Icon_FaithChristianity.png" path="/Icon3/"/>
-    <image id="km3e5l" name="UI_Icon_FaithIslam.png" path="/Icon3/"/>
-    <image id="km3e5m" name="UI_Icon_FaithJudaism.png" path="/Icon3/"/>
-    <image id="km3e5n" name="UI_Icon_FaithTaosim.png" path="/Icon3/"/>
-    <image id="km3e5o" name="UI_Icon_FastForward.png" path="/Icon3/"/>
-    <image id="km3e5p" name="UI_Icon_FileDocument.png" path="/Icon3/"/>
-    <image id="km3e5q" name="UI_Icon_FileFolder.png" path="/Icon3/"/>
-    <image id="km3e5r" name="UI_Icon_Fill.png" path="/Icon3/"/>
-    <image id="km3e5s" name="UI_Icon_Film.png" path="/Icon3/"/>
-    <image id="km3e5t" name="UI_Icon_FilmPlay.png" path="/Icon3/"/>
-    <image id="km3e5u" name="UI_Icon_Filter.png" path="/Icon3/"/>
-    <image id="km3e5v" name="UI_Icon_Fire.png" path="/Icon3/"/>
-    <image id="km3e5w" name="UI_Icon_Flag.png" path="/Icon3/"/>
-    <image id="km3e5x" name="UI_Icon_FullscreenEnter.png" path="/Icon3/"/>
-    <image id="km3e5y" name="UI_Icon_FullscreenExit.png" path="/Icon3/"/>
-    <image id="km3e5z" name="UI_Icon_GenderFemale1.png" path="/Icon3/"/>
-    <image id="km3e60" name="UI_Icon_GenderFemale2.png" path="/Icon3/"/>
-    <image id="km3e61" name="UI_Icon_GenderMale1.png" path="/Icon3/"/>
-    <image id="km3e62" name="UI_Icon_GenderMale2.png" path="/Icon3/"/>
-    <image id="km3e63" name="UI_Icon_Gift.png" path="/Icon3/"/>
-    <image id="km3e64" name="UI_Icon_Globe.png" path="/Icon3/"/>
-    <image id="km3e65" name="UI_Icon_Hammer.png" path="/Icon3/"/>
-    <image id="km3e66" name="UI_Icon_Heart.png" path="/Icon3/"/>
-    <image id="km3e67" name="UI_Icon_HeartEmpty.png" path="/Icon3/"/>
-    <image id="km3e68" name="UI_Icon_Home.png" path="/Icon3/"/>
-    <image id="km3e69" name="UI_Icon_Infinite.png" path="/Icon3/"/>
-    <image id="km3e6a" name="UI_Icon_Info.png" path="/Icon3/"/>
-    <image id="km3e6b" name="UI_Icon_InputController.png" path="/Icon3/"/>
-    <image id="km3e6c" name="UI_Icon_InputJoystick.png" path="/Icon3/"/>
-    <image id="km3e6d" name="UI_Icon_InputKeyboard.png" path="/Icon3/"/>
-    <image id="km3e6e" name="UI_Icon_InvBelt.png" path="/Icon3/"/>
-    <image id="km3e6f" name="UI_Icon_InvBoots.png" path="/Icon3/"/>
-    <image id="km3e6g" name="UI_Icon_InvChest.png" path="/Icon3/"/>
-    <image id="km3e6h" name="UI_Icon_Target.png" path="/Icon3/"/>
-    <image id="km3e6i" name="UI_Icon_Text.png" path="/Icon3/"/>
-    <image id="km3e6j" name="UI_Icon_ToggleNext.png" path="/Icon3/"/>
-    <image id="km3e6k" name="UI_Icon_TogglePrevious.png" path="/Icon3/"/>
-    <component id="km3e6m" name="Component1.xml" path="/Components/"/>
-    <component id="km3e6q" name="GreenButton.xml" path="/Components/Basic/"/>
-    <component id="mab96w" name="FrameWindow.xml" path="/Components/Basic/"/>
-    <component id="mab96x" name="Component2.xml" path="/Components/Basic/"/>
-    <component id="gjwy6y" name="TabController.xml" path="/" exported="true"/>
-    <component id="gjwy70" name="Button1.xml" path="/" exported="true"/>
-    <component id="gjwy71" name="TabContext1.xml" path="/" exported="true"/>
+    <image id="iicj0" name="UI_Button_Standard_Green.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="15,17,30,34"/>
+    <image id="iicj1" name="UI_Button_Standard_Orange.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="15,17,30,34"/>
+    <image id="iicj2" name="UI_Button_Standard_Red.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="15,17,30,34"/>
+    <image id="iicj3" name="UI_Button_Standard_Sky.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="15,17,30,34"/>
+    <image id="iicj4" name="UI_Fill_Green.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="13,13,26,26"/>
+    <image id="iicj5" name="UI_Fill_Orange.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="13,13,26,26"/>
+    <image id="iicj6" name="UI_Fill_Red.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="13,13,26,26"/>
+    <image id="iicj7" name="UI_Fill_Sky.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="13,13,26,26"/>
+    <image id="iicj8" name="UI_Frame_Dark_Transparent.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="15,15,30,30"/>
+    <image id="iicj9" name="UI_Frame_Dark_White.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="15,15,30,30"/>
+    <image id="iicja" name="UI_Frame_Transparent.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="15,15,30,30"/>
+    <image id="iicjb" name="UI_Frame_White.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="15,15,30,30"/>
+    <image id="iicjc" name="UI_Panel_Content.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="20,20,40,40"/>
+    <image id="iicjd" name="UI_Panel_Window.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="20,21,40,42"/>
+    <image id="iicje" name="UI_Tab_Active.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="20,20,40,40"/>
+    <image id="iicjf" name="UI_Tab_Inactive.png" path="/ArtAsset/" exported="true" scale="9grid" scale9grid="20,20,40,40"/>
+    <component id="iicjg" name="GreenButton.xml" path="/Basics/" exported="true"/>
+    <component id="iicjh" name="WindowFrame.xml" path="/Basics/" exported="true"/>
+    <component id="iicji" name="OrangeButton.xml" path="/Basics/" exported="true"/>
+    <component id="iicjk" name="RedButton.xml" path="/Basics/" exported="true"/>
+    <component id="iicjl" name="SkyButton.xml" path="/Basics/" exported="true"/>
+    <component id="iicjm" name="GreenSmallButton.xml" path="/Basics/" exported="true"/>
+    <image id="iicjo" name="cross.png" path="/ArtAsset/" exported="true"/>
+    <component id="iicjq" name="WindowTitle.xml" path="/Basics/" exported="true"/>
+    <component id="hv92r" name="LoginWindow.xml" path="/SimpleGame/" exported="true"/>
+    <component id="hv92u" name="BasicInput.xml" path="/Basics/" exported="true"/>
+    <component id="hv92v" name="BasicPassword.xml" path="/Basics/" exported="true"/>
   </resources>
   <publish name="SimpleUI" genCode="true"/>
 </packageDescription>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1136,640">
+  <displayList>
+    <component id="n0_hv92" name="BaseWindow" src="iicjh" fileName="Basics/WindowFrame.xml" xy="2,-6"/>
+    <component id="n2_hv92" name="Acount" src="hv92u" fileName="Basics/BasicInput.xml" xy="418,259"/>
+    <component id="n3_hv92" name="Password" src="hv92v" fileName="Basics/BasicPassword.xml" xy="418,324"/>
+    <component id="n4_hv92" name="LoginButton" src="iicjg" fileName="Basics/GreenButton.xml" xy="450,398" size="236,50">
+      <Button title="Login" titleFontSize="20"/>
+    </component>
+  </displayList>
+</component>

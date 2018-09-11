@@ -4,7 +4,7 @@
 	"font":"_sans",
 	"fontScheme":["默认字体"],
 	"fontSize":12,
-	"fontSizeScheme":["自定义字体大小 30"],
+	"fontSizeScheme":["自定义字体大小 12","自定义字体大小 20","自定义字体大小 30"],
 	"scrollBars":{
 		"defaultDisplay":"visible",
 		"horizontal":"",
