@@ -28,6 +28,22 @@
     <component id="hv92r" name="LoginWindow.xml" path="/SimpleGame/" exported="true"/>
     <component id="hv92u" name="BasicInput.xml" path="/Basics/" exported="true"/>
     <component id="hv92v" name="BasicPassword.xml" path="/Basics/" exported="true"/>
+    <component id="rxsvw" name="CreateRoleWindow.xml" path="/SimpleGame/" exported="true"/>
+    <component id="rxsvx" name="GreenIconButton.xml" path="/Basics/" exported="true"/>
+    <image id="rxsvy" name="UI_Graphic_Resource_Coins.png" path="/ArtAsset/Icons/" scale="9grid" scale9grid="128,128,256,256"/>
+    <image id="rxsvz" name="UI_Graphic_Resource_Food.png" path="/ArtAsset/Icons/" scale="9grid" scale9grid="128,128,256,256"/>
+    <image id="rxsv10" name="UI_Graphic_Resource_Gems.png" path="/ArtAsset/Icons/" scale="9grid" scale9grid="128,128,256,256"/>
+    <image id="rxsv11" name="UI_Graphic_Resource_Iron.png" path="/ArtAsset/Icons/" scale="9grid" scale9grid="128,129,256,258"/>
+    <image id="rxsv12" name="UI_Graphic_Resource_Tools.png" path="/ArtAsset/Icons/" scale="9grid" scale9grid="129,129,258,258"/>
+    <image id="rxsv13" name="UI_Graphic_Resource_Wood.png" path="/ArtAsset/Icons/" scale="9grid" scale9grid="128,129,256,258"/>
+    <image id="rxsv14" name="UI_Icon_ArrowDown.png" path="/ArtAsset/Icons/"/>
+    <image id="rxsv15" name="UI_Icon_ArrowLeft.png" path="/ArtAsset/Icons/"/>
+    <image id="rxsv16" name="UI_Icon_ArrowRight.png" path="/ArtAsset/Icons/"/>
+    <image id="rxsv17" name="UI_Icon_ArrowUp.png" path="/ArtAsset/Icons/"/>
+    <component id="rxsv18" name="BasicText.xml" path="/Basics/" exported="true"/>
+    <component id="rxsv19" name="RoleRenameWindow.xml" path="/SimpleGame/" exported="true"/>
+    <component id="rxsv1a" name="IconLoader.xml" path="/Basics/" exported="true"/>
+    <component id="qdiw1b" name="SimpleMainWindow.xml" path="/SimpleGame/" exported="true"/>
   </resources>
   <publish name="SimpleUI" genCode="true"/>
 </packageDescription>

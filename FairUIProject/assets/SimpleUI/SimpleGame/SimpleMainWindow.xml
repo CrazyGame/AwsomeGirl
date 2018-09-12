@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1136,640" adaptationTest="FitSize">
+  <displayList>
+    <image id="n2_qdiw" name="BackGround" src="iicjd" fileName="ArtAsset/UI_Panel_Window.png" xy="0,0" size="1136,640" locked="true"/>
+    <component id="n4_qdiw" name="FightButton" src="iicjg" fileName="Basics/GreenButton.xml" xy="794,156">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button title="Fight"/>
+    </component>
+    <component id="n5_qdiw" name="HomeButton" src="iicjg" fileName="Basics/GreenButton.xml" xy="794,312">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button title="Home"/>
+    </component>
+    <component id="n6_qdiw" name="ModifyButton" src="iicjg" fileName="Basics/GreenButton.xml" xy="871,234">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button title="Modify"/>
+    </component>
+    <component id="n7_qdiw" name="BuildButton" src="iicjg" fileName="Basics/GreenButton.xml" xy="693,234">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button title="Create"/>
+    </component>
+    <component id="n9_qdiw" name="RoleIcon" src="rxsv1a" fileName="Basics/IconLoader.xml" xy="120,94"/>
+    <list id="n12_qdiw" name="ButtomButtons" xy="30,570" size="646,60" layout="flow_hz" overflow="scroll" colGap="10" align="center" vAlign="middle">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <item url="ui://wmafp3a9iicjg" title="Shop" name="Shop"/>
+      <item url="ui://wmafp3a9iicjg" title="Active"/>
+      <item url="ui://wmafp3a9iicjg" title="Task"/>
+      <item url="ui://wmafp3a9iicjg" title="Friend"/>
+    </list>
+  </displayList>
+</component>

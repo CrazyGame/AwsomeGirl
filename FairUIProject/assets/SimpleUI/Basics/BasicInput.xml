@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="300,40" extention="Label">
+<component size="300,40" extention="Label" initName="BasicInput">
   <displayList>
     <image id="n2_hv92" name="BackGround" src="iicj4" fileName="ArtAsset/UI_Fill_Green.png" xy="0,0" size="300,40"/>
     <text id="n0_hv92" name="InputContent" xy="100,0" size="200,40" input="true" prompt="Only A-Z" maxLength="25" restrict="[a-zA-Z]" fontSize="20" align="center" vAlign="middle" vars="true" autoSize="none" singleLine="true" text="">

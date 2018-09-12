@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 2551897371
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: be193a096d7d6832231572ee9ec940b1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 03970310989e9ae0e8cd1c6f532688cc
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/FairyGUI/Bundles/SimpleUI_atlas0.png
+- Assets/FairyGUI/Bundles/SimpleUI_fui.bytes
+Dependencies: []

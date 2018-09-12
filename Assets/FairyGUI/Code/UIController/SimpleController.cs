@@ -5,8 +5,10 @@ public class SimpleController : MonoBehaviour
 {
     private void Start()
     {
+        SimpleUIBinder.BindAll();
+
         FairyLoadBundle fairyLoadBundle = SimpleFactory.CreateFairyLoadBundle();
-        FairyWindow fairyWindow = SimpleFactory.CreateFairyWindow();
-        StartCoroutine(fairyLoadBundle.DownLoadData<TabControllerBundle>(fairyWindow));
+        BundleComplete fairyWindow = SimpleFactory.CreateFairyWindow();
+        StartCoroutine(fairyLoadBundle.DownLoadData<LoginWindowBundle>(fairyWindow));        
     }
 }

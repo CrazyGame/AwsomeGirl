@@ -5,8 +5,8 @@
         return new FairyLoadBundleImplement();
     }
 
-    public static FairyWindow CreateFairyWindow()
+    public static BundleComplete CreateFairyWindow()
     {
-        return new FairyWindowImplement();
+        return new FairyStartBundleImplement();
     }
 }

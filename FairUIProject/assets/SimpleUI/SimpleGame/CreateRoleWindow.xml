@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1136,640" initName="CreateRoleWindow">
+  <displayList>
+    <component id="n0_rxsv" name="BaseWindow" src="iicjh" fileName="Basics/WindowFrame.xml" xy="0,0" locked="true"/>
+    <component id="n7_rxsv" name="Next" src="iicji" fileName="Basics/OrangeButton.xml" xy="977,578">
+      <Button title="Next" titleFontSize="20"/>
+    </component>
+    <list id="n8_rxsv" name="RoleList" xy="834,126" size="200,245" overflow="hidden" lineGap="10" defaultItem="ui://wmafp3a9rxsvx">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n11_rxsv" name="Detials" src="rxsv18" fileName="Basics/BasicText.xml" xy="697,473" size="306,67"/>
+    <component id="n12_rxsv" name="HintText" src="rxsv18" fileName="Basics/BasicText.xml" xy="111,533" size="306,67"/>
+    <component id="n13_rxsv" name="IconLoader" src="rxsv1a" fileName="Basics/IconLoader.xml" xy="80,103"/>
+  </displayList>
+</component>

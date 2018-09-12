@@ -8,9 +8,22 @@ namespace SimpleUI
 	{
 		public static void BindAll()
 		{
-			UIObjectFactory.SetPackageItemExtension(TabController.URL, typeof(TabController));
-			UIObjectFactory.SetPackageItemExtension(Button1.URL, typeof(Button1));
-			UIObjectFactory.SetPackageItemExtension(TabContext1.URL, typeof(TabContext1));
+			UIObjectFactory.SetPackageItemExtension(LoginWindow.URL, typeof(LoginWindow));
+			UIObjectFactory.SetPackageItemExtension(BasicInput.URL, typeof(BasicInput));
+			UIObjectFactory.SetPackageItemExtension(BasicPassword.URL, typeof(BasicPassword));
+			UIObjectFactory.SetPackageItemExtension(GreenButton.URL, typeof(GreenButton));
+			UIObjectFactory.SetPackageItemExtension(WindowFrame.URL, typeof(WindowFrame));
+			UIObjectFactory.SetPackageItemExtension(OrangeButton.URL, typeof(OrangeButton));
+			UIObjectFactory.SetPackageItemExtension(RedButton.URL, typeof(RedButton));
+			UIObjectFactory.SetPackageItemExtension(SkyButton.URL, typeof(SkyButton));
+			UIObjectFactory.SetPackageItemExtension(GreenSmallButton.URL, typeof(GreenSmallButton));
+			UIObjectFactory.SetPackageItemExtension(WindowTitle.URL, typeof(WindowTitle));
+			UIObjectFactory.SetPackageItemExtension(SimpleMainWindow.URL, typeof(SimpleMainWindow));
+			UIObjectFactory.SetPackageItemExtension(BasicText.URL, typeof(BasicText));
+			UIObjectFactory.SetPackageItemExtension(RoleRenameWindow.URL, typeof(RoleRenameWindow));
+			UIObjectFactory.SetPackageItemExtension(IconLoader.URL, typeof(IconLoader));
+			UIObjectFactory.SetPackageItemExtension(CreateRoleWindow.URL, typeof(CreateRoleWindow));
+			UIObjectFactory.SetPackageItemExtension(GreenIconButton.URL, typeof(GreenIconButton));
 		}
 	}
 }

@@ -3,13 +3,12 @@ using FairyGUI.Utils;
 
 namespace {packageName}
 {
-	public partial class {className} : {componentName}
+	public partial class {className} : {componentName},UIMdeiaDispose
 	{
 {variable}
 
 		public const string URL = "{uiPath}";
 		
-		public const string WindowKey = "{className}";
 
 		
 		public static {className} CreateInstance()
@@ -20,6 +19,12 @@ namespace {packageName}
 		public {className}()
 		{
 		}
+		
+		public bool Disposable
+        {
+            get;
+            set;
+        }
 
 		public override void ConstructFromXML(XML xml)
 		{
@@ -34,19 +39,23 @@ namespace {packageName}
     {
 		public string ResName { get { return "{className}"; } }
 		
-		public string WindowKeyName{get { return "{className}";} }
     }
 
      public class {className}UIMedia:UIMedia
     {
+	    {className} instace;
         public GComponent Inject()
         {
-            {className} instace = {className}.CreateInstance();
+			if(instace != null) return instace;
+            instace = {className}.CreateInstance();
+			instace.Disposable = false;
             new {className}Media().Init(instace);
 			return instace;
         }
+		
+		
     }
-	
+		
 	 public class {className}WindowName : WindowName
     {
         public string Key
@@ -76,6 +85,17 @@ namespace {packageName}
 			InitInstance(instace);
         }
 		
+	
+		
         partial void InitInstance({className} instace);		
-    }	
+    }
+
+	public partial class CreateInstanceMapping
+    {
+        public void {className}Mapping()
+        {
+            WindowManage.GetInstance.AllWindows.Add(new {className}WindowName().Key, new {className}UIMedia());
+        }
+    }
+	
 }

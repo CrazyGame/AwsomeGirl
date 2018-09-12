@@ -5,7 +5,6 @@ using FairyGUI;
 /// </summary>
 public interface FairyGUIBundle
 {
-    string BundleName { get; }
     string ResName { get; }
 }
 
@@ -14,10 +13,38 @@ public interface FairyGUIBundle
 /// </summary>
 public interface FairyLoadBundle
 {
-    IEnumerator DownLoadData<T>(FairyWindow fairyWindow) where T : FairyGUIBundle, new();
+    IEnumerator DownLoadData<T>(BundleComplete fairyWindow) where T : FairyGUIBundle, new();
+   
 }
 
-public interface FairyWindow
+public interface UIMedia
 {
-    Window CreateWindow(GObject obj);
+    GComponent Inject();
+}
+
+public interface UIMdeiaDispose
+{
+    bool Disposable { get; set; }
+}
+
+public interface WindowName
+{
+    string Key { get;}
+}
+
+
+public interface CreateCommand
+{
+    GComponent Command();
+}
+
+
+public interface BundleComplete
+{
+    void OnComplete();
+}
+
+public interface FairyPackagePool
+{
+    UIPackage bundlePackage { get; set;}
 }

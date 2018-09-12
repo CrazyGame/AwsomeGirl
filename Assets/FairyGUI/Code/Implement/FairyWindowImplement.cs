@@ -1,13 +1,9 @@
-﻿using FairyGUI;
+﻿using SimpleUI;
 
-public class FairyWindowImplement : FairyWindow
+public class FairyStartBundleImplement : BundleComplete
 {
-    public Window CreateWindow(GObject obj)
+    public void OnComplete()
     {
-        Window window = new Window();
-        window.modal = false;
-        window.AddChild(obj);
-        window.Show();
-        return window;
+        WindowManage.GetInstance.OpenWindow(WindowNameFactory.GetLoginWindowName());
     }
 }

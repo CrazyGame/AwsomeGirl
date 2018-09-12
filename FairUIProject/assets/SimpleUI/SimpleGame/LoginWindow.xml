@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="1136,640">
+<component size="1136,640" initName="LoginWindow">
   <displayList>
     <component id="n0_hv92" name="BaseWindow" src="iicjh" fileName="Basics/WindowFrame.xml" xy="2,-6"/>
     <component id="n2_hv92" name="Acount" src="hv92u" fileName="Basics/BasicInput.xml" xy="418,259"/>

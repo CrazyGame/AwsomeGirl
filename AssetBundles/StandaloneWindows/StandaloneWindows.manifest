@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 4204873873
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: simpleui_fui.windowframe
+      Dependencies: {}
