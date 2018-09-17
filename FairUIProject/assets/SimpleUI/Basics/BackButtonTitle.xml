@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,60" initName="BackTitleButton">
+  <displayList>
+    <component id="n1_lgbt" name="BackButton" src="lgbt1i" fileName="Basics/BackIconButton.xml" xy="0,0"/>
+    <text id="n2_lgbt" name="Title" xy="48,10" size="250,40" fontSize="30" color="#ffffff" vAlign="middle" autoSize="none" text="Title"/>
+  </displayList>
+</component>

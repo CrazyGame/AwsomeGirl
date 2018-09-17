@@ -39,7 +39,7 @@ namespace SimpleUI
 	}
 		
 
-	public class BasicTextBundle: FairyGUIBundle
+	public class BasicTextBundle: AssetBundleResName
     {
 		public string ResName { get { return "BasicText"; } }
 		
@@ -55,12 +55,10 @@ namespace SimpleUI
 			instace.Disposable = false;
             new BasicTextMedia().Init(instace);
 			return instace;
-        }
-		
-		
+        }		
     }
 		
-	 public class BasicTextWindowName : WindowName
+	public class BasicTextWindowName : WindowName
     {
         public string Key
         {
@@ -71,7 +69,7 @@ namespace SimpleUI
         }
     }
 	
-	 public partial class WindowNameFactory
+	public partial class WindowNameFactory
     {
         public static WindowName GetBasicTextName()
         {
@@ -82,10 +80,8 @@ namespace SimpleUI
 
     public partial class BasicTextMedia
     {
-        BasicText window;
         public void Init(BasicText instace)
         {
-            window = instace;
 			InitInstance(instace);
         }
 		
@@ -100,6 +96,5 @@ namespace SimpleUI
         {
             WindowManage.GetInstance.AllWindows.Add(new BasicTextWindowName().Key, new BasicTextUIMedia());
         }
-    }
-	
+    }	
 }

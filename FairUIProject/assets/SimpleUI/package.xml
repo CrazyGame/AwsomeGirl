@@ -22,8 +22,7 @@
     <component id="iicji" name="OrangeButton.xml" path="/Basics/" exported="true"/>
     <component id="iicjk" name="RedButton.xml" path="/Basics/" exported="true"/>
     <component id="iicjl" name="SkyButton.xml" path="/Basics/" exported="true"/>
-    <component id="iicjm" name="GreenSmallButton.xml" path="/Basics/" exported="true"/>
-    <image id="iicjo" name="cross.png" path="/ArtAsset/" exported="true"/>
+    <component id="iicjm" name="SkySmallButton.xml" path="/Basics/" exported="true"/>
     <component id="iicjq" name="WindowTitle.xml" path="/Basics/" exported="true"/>
     <component id="hv92r" name="LoginWindow.xml" path="/SimpleGame/" exported="true"/>
     <component id="hv92u" name="BasicInput.xml" path="/Basics/" exported="true"/>
@@ -44,6 +43,9 @@
     <component id="rxsv19" name="RoleRenameWindow.xml" path="/SimpleGame/" exported="true"/>
     <component id="rxsv1a" name="IconLoader.xml" path="/Basics/" exported="true"/>
     <component id="qdiw1b" name="SimpleMainWindow.xml" path="/SimpleGame/" exported="true"/>
+    <image id="lgbt1f" name="UI_Icon_PlayBackwards.png" path="/ArtAsset/" exported="true" scale="" scale9grid="32,15,64,98"/>
+    <component id="lgbt1i" name="BackIconButton.xml" path="/Basics/" exported="true"/>
+    <component id="lgbt1j" name="BackButtonTitle.xml" path="/Basics/" exported="true"/>
   </resources>
   <publish name="SimpleUI" genCode="true"/>
 </packageDescription>

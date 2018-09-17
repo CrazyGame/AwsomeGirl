@@ -45,7 +45,7 @@ namespace SimpleUI
 	}
 		
 
-	public class RoleRenameWindowBundle: FairyGUIBundle
+	public class RoleRenameWindowBundle: AssetBundleResName
     {
 		public string ResName { get { return "RoleRenameWindow"; } }
 		
@@ -61,12 +61,10 @@ namespace SimpleUI
 			instace.Disposable = false;
             new RoleRenameWindowMedia().Init(instace);
 			return instace;
-        }
-		
-		
+        }		
     }
 		
-	 public class RoleRenameWindowWindowName : WindowName
+	public class RoleRenameWindowWindowName : WindowName
     {
         public string Key
         {
@@ -77,7 +75,7 @@ namespace SimpleUI
         }
     }
 	
-	 public partial class WindowNameFactory
+	public partial class WindowNameFactory
     {
         public static WindowName GetRoleRenameWindowName()
         {
@@ -88,10 +86,8 @@ namespace SimpleUI
 
     public partial class RoleRenameWindowMedia
     {
-        RoleRenameWindow window;
         public void Init(RoleRenameWindow instace)
         {
-            window = instace;
 			InitInstance(instace);
         }
 		
@@ -106,6 +102,5 @@ namespace SimpleUI
         {
             WindowManage.GetInstance.AllWindows.Add(new RoleRenameWindowWindowName().Key, new RoleRenameWindowUIMedia());
         }
-    }
-	
+    }	
 }

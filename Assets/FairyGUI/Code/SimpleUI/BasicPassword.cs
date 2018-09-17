@@ -41,7 +41,7 @@ namespace SimpleUI
 	}
 		
 
-	public class BasicPasswordBundle: FairyGUIBundle
+	public class BasicPasswordBundle: AssetBundleResName
     {
 		public string ResName { get { return "BasicPassword"; } }
 		
@@ -57,12 +57,10 @@ namespace SimpleUI
 			instace.Disposable = false;
             new BasicPasswordMedia().Init(instace);
 			return instace;
-        }
-		
-		
+        }		
     }
 		
-	 public class BasicPasswordWindowName : WindowName
+	public class BasicPasswordWindowName : WindowName
     {
         public string Key
         {
@@ -73,7 +71,7 @@ namespace SimpleUI
         }
     }
 	
-	 public partial class WindowNameFactory
+	public partial class WindowNameFactory
     {
         public static WindowName GetBasicPasswordName()
         {
@@ -84,10 +82,8 @@ namespace SimpleUI
 
     public partial class BasicPasswordMedia
     {
-        BasicPassword window;
         public void Init(BasicPassword instace)
         {
-            window = instace;
 			InitInstance(instace);
         }
 		
@@ -102,6 +98,5 @@ namespace SimpleUI
         {
             WindowManage.GetInstance.AllWindows.Add(new BasicPasswordWindowName().Key, new BasicPasswordUIMedia());
         }
-    }
-	
+    }	
 }

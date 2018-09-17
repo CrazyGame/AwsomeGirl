@@ -41,7 +41,7 @@ namespace SimpleUI
 	}
 		
 
-	public class BasicInputBundle: FairyGUIBundle
+	public class BasicInputBundle: AssetBundleResName
     {
 		public string ResName { get { return "BasicInput"; } }
 		
@@ -57,12 +57,10 @@ namespace SimpleUI
 			instace.Disposable = false;
             new BasicInputMedia().Init(instace);
 			return instace;
-        }
-		
-		
+        }		
     }
 		
-	 public class BasicInputWindowName : WindowName
+	public class BasicInputWindowName : WindowName
     {
         public string Key
         {
@@ -73,7 +71,7 @@ namespace SimpleUI
         }
     }
 	
-	 public partial class WindowNameFactory
+	public partial class WindowNameFactory
     {
         public static WindowName GetBasicInputName()
         {
@@ -84,10 +82,8 @@ namespace SimpleUI
 
     public partial class BasicInputMedia
     {
-        BasicInput window;
         public void Init(BasicInput instace)
         {
-            window = instace;
 			InitInstance(instace);
         }
 		
@@ -102,6 +98,5 @@ namespace SimpleUI
         {
             WindowManage.GetInstance.AllWindows.Add(new BasicInputWindowName().Key, new BasicInputUIMedia());
         }
-    }
-	
+    }	
 }

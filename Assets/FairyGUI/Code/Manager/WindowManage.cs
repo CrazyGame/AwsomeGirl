@@ -10,9 +10,7 @@ namespace SimpleUI
         public Dictionary<string, UIMedia> AllWindows { get { return allWindows; } }
 
         partial void LoadWindow();
-        Window lastWindow;
-        GComponent lastWindowContent;
-        UIMdeiaDispose lastDispose;
+       
 
         public WindowManage()
         {
@@ -30,6 +28,33 @@ namespace SimpleUI
             return allWindows[key];
         }
 
+
+        Window MainMenuWindow;
+        public bool AddMainMenu(WindowName windowName)
+        {
+            UIMedia createCommand = GetCreateCommand(windowName.Key);
+            if (createCommand != null)
+            {
+                GComponent component = createCommand.Inject();
+                if (component != null)
+                {
+                    if(MainMenuWindow == null)
+                    {
+                        MainMenuWindow = new Window();
+                        MainMenuWindow.name = "MainMenuWindow";
+                    }
+                    MainMenuWindow.AddChild(component);
+                    MainMenuWindow.Show();
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
+        Window lastWindow;
+        GComponent lastWindowContent;
+        UIMdeiaDispose lastDispose;
         public bool OpenWindow(WindowName windowName)
         {
             UIMedia createCommand = GetCreateCommand(windowName.Key);
@@ -51,6 +76,7 @@ namespace SimpleUI
                     if(lastWindow == null)
                     {
                         lastWindow = new Window();
+                        lastWindow.name = "ModalWindow";
                         lastWindow.modal = true;
                     }
 
@@ -63,6 +89,20 @@ namespace SimpleUI
                 }
             }           
             return false;
+        }
+        public bool CloseWindow(WindowName windowName, bool disposeChild = true)
+        {
+            if (disposeChild && lastWindowContent != null)
+            {
+
+                if (lastDispose.Disposable)
+                {
+                    lastWindowContent.Dispose();
+                    lastDispose = null;
+                    lastWindowContent = null;
+                }
+            }
+            return true;
         }
     }
 }

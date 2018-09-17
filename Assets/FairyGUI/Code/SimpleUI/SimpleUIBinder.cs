@@ -16,8 +16,10 @@ namespace SimpleUI
 			UIObjectFactory.SetPackageItemExtension(OrangeButton.URL, typeof(OrangeButton));
 			UIObjectFactory.SetPackageItemExtension(RedButton.URL, typeof(RedButton));
 			UIObjectFactory.SetPackageItemExtension(SkyButton.URL, typeof(SkyButton));
-			UIObjectFactory.SetPackageItemExtension(GreenSmallButton.URL, typeof(GreenSmallButton));
+			UIObjectFactory.SetPackageItemExtension(SkySmallButton.URL, typeof(SkySmallButton));
 			UIObjectFactory.SetPackageItemExtension(WindowTitle.URL, typeof(WindowTitle));
+			UIObjectFactory.SetPackageItemExtension(BackIconButton.URL, typeof(BackIconButton));
+			UIObjectFactory.SetPackageItemExtension(BackButtonTitle.URL, typeof(BackButtonTitle));
 			UIObjectFactory.SetPackageItemExtension(SimpleMainWindow.URL, typeof(SimpleMainWindow));
 			UIObjectFactory.SetPackageItemExtension(BasicText.URL, typeof(BasicText));
 			UIObjectFactory.SetPackageItemExtension(RoleRenameWindow.URL, typeof(RoleRenameWindow));

@@ -39,7 +39,7 @@ namespace SimpleUI
 	}
 		
 
-	public class WindowTitleBundle: FairyGUIBundle
+	public class WindowTitleBundle: AssetBundleResName
     {
 		public string ResName { get { return "WindowTitle"; } }
 		
@@ -55,12 +55,10 @@ namespace SimpleUI
 			instace.Disposable = false;
             new WindowTitleMedia().Init(instace);
 			return instace;
-        }
-		
-		
+        }		
     }
 		
-	 public class WindowTitleWindowName : WindowName
+	public class WindowTitleWindowName : WindowName
     {
         public string Key
         {
@@ -71,7 +69,7 @@ namespace SimpleUI
         }
     }
 	
-	 public partial class WindowNameFactory
+	public partial class WindowNameFactory
     {
         public static WindowName GetWindowTitleName()
         {
@@ -82,10 +80,8 @@ namespace SimpleUI
 
     public partial class WindowTitleMedia
     {
-        WindowTitle window;
         public void Init(WindowTitle instace)
         {
-            window = instace;
 			InitInstance(instace);
         }
 		
@@ -100,6 +96,5 @@ namespace SimpleUI
         {
             WindowManage.GetInstance.AllWindows.Add(new WindowTitleWindowName().Key, new WindowTitleUIMedia());
         }
-    }
-	
+    }	
 }

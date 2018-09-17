@@ -47,7 +47,7 @@ namespace SimpleUI
 	}
 		
 
-	public class RedButtonBundle: FairyGUIBundle
+	public class RedButtonBundle: AssetBundleResName
     {
 		public string ResName { get { return "RedButton"; } }
 		
@@ -63,12 +63,10 @@ namespace SimpleUI
 			instace.Disposable = false;
             new RedButtonMedia().Init(instace);
 			return instace;
-        }
-		
-		
+        }		
     }
 		
-	 public class RedButtonWindowName : WindowName
+	public class RedButtonWindowName : WindowName
     {
         public string Key
         {
@@ -79,7 +77,7 @@ namespace SimpleUI
         }
     }
 	
-	 public partial class WindowNameFactory
+	public partial class WindowNameFactory
     {
         public static WindowName GetRedButtonName()
         {
@@ -90,10 +88,8 @@ namespace SimpleUI
 
     public partial class RedButtonMedia
     {
-        RedButton window;
         public void Init(RedButton instace)
         {
-            window = instace;
 			InitInstance(instace);
         }
 		
@@ -108,6 +104,5 @@ namespace SimpleUI
         {
             WindowManage.GetInstance.AllWindows.Add(new RedButtonWindowName().Key, new RedButtonUIMedia());
         }
-    }
-	
+    }	
 }

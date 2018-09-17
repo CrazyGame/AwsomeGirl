@@ -37,7 +37,7 @@ namespace SimpleUI
 	}
 		
 
-	public class IconLoaderBundle: FairyGUIBundle
+	public class IconLoaderBundle: AssetBundleResName
     {
 		public string ResName { get { return "IconLoader"; } }
 		
@@ -53,12 +53,10 @@ namespace SimpleUI
 			instace.Disposable = false;
             new IconLoaderMedia().Init(instace);
 			return instace;
-        }
-		
-		
+        }		
     }
 		
-	 public class IconLoaderWindowName : WindowName
+	public class IconLoaderWindowName : WindowName
     {
         public string Key
         {
@@ -69,7 +67,7 @@ namespace SimpleUI
         }
     }
 	
-	 public partial class WindowNameFactory
+	public partial class WindowNameFactory
     {
         public static WindowName GetIconLoaderName()
         {
@@ -80,10 +78,8 @@ namespace SimpleUI
 
     public partial class IconLoaderMedia
     {
-        IconLoader window;
         public void Init(IconLoader instace)
         {
-            window = instace;
 			InitInstance(instace);
         }
 		
@@ -98,6 +94,5 @@ namespace SimpleUI
         {
             WindowManage.GetInstance.AllWindows.Add(new IconLoaderWindowName().Key, new IconLoaderUIMedia());
         }
-    }
-	
+    }	
 }

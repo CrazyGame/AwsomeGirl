@@ -1,25 +1,15 @@
 {
-	"active_doc": [
-		"wmafp3a9",
-		"qdiw1b"
-	],
-	"hidden_packages": [],
 	"docs": [
-		"wmafp3a9",
-		"rxsv19",
-		"wmafp3a9",
-		"rxsv1a",
-		"wmafp3a9",
-		"rxsvw",
-		"wmafp3a9",
-		"hv92r",
-		"wmafp3a9",
-		"iicjh",
 		"wmafp3a9",
 		"qdiw1b"
 	],
 	"expanded_nodes": [
 		"wmafp3a9",
 		"/"
-	]
+	],
+	"active_doc": [
+		"wmafp3a9",
+		"qdiw1b"
+	],
+	"hidden_packages": []
 }

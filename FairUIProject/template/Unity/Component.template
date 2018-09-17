@@ -35,7 +35,7 @@ namespace {packageName}
 	}
 		
 
-	public class {className}Bundle: FairyGUIBundle
+	public class {className}Bundle: AssetBundleResName
     {
 		public string ResName { get { return "{className}"; } }
 		
@@ -51,12 +51,10 @@ namespace {packageName}
 			instace.Disposable = false;
             new {className}Media().Init(instace);
 			return instace;
-        }
-		
-		
+        }		
     }
 		
-	 public class {className}WindowName : WindowName
+	public class {className}WindowName : WindowName
     {
         public string Key
         {
@@ -67,7 +65,7 @@ namespace {packageName}
         }
     }
 	
-	 public partial class WindowNameFactory
+	public partial class WindowNameFactory
     {
         public static WindowName Get{className}Name()
         {
@@ -78,10 +76,8 @@ namespace {packageName}
 
     public partial class {className}Media
     {
-        {className} window;
         public void Init({className} instace)
         {
-            window = instace;
 			InitInstance(instace);
         }
 		
@@ -96,6 +92,5 @@ namespace {packageName}
         {
             WindowManage.GetInstance.AllWindows.Add(new {className}WindowName().Key, new {className}UIMedia());
         }
-    }
-	
+    }	
 }

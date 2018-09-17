@@ -43,7 +43,7 @@ namespace SimpleUI
 	}
 		
 
-	public class LoginWindowBundle: FairyGUIBundle
+	public class LoginWindowBundle: AssetBundleResName
     {
 		public string ResName { get { return "LoginWindow"; } }
 		
@@ -59,12 +59,10 @@ namespace SimpleUI
 			instace.Disposable = false;
             new LoginWindowMedia().Init(instace);
 			return instace;
-        }
-		
-		
+        }		
     }
 		
-	 public class LoginWindowWindowName : WindowName
+	public class LoginWindowWindowName : WindowName
     {
         public string Key
         {
@@ -75,7 +73,7 @@ namespace SimpleUI
         }
     }
 	
-	 public partial class WindowNameFactory
+	public partial class WindowNameFactory
     {
         public static WindowName GetLoginWindowName()
         {
@@ -86,10 +84,8 @@ namespace SimpleUI
 
     public partial class LoginWindowMedia
     {
-        LoginWindow window;
         public void Init(LoginWindow instace)
         {
-            window = instace;
 			InitInstance(instace);
         }
 		
@@ -104,6 +100,5 @@ namespace SimpleUI
         {
             WindowManage.GetInstance.AllWindows.Add(new LoginWindowWindowName().Key, new LoginWindowUIMedia());
         }
-    }
-	
+    }	
 }

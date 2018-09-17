@@ -47,7 +47,7 @@ namespace SimpleUI
 	}
 		
 
-	public class GreenIconButtonBundle: FairyGUIBundle
+	public class GreenIconButtonBundle: AssetBundleResName
     {
 		public string ResName { get { return "GreenIconButton"; } }
 		
@@ -63,12 +63,10 @@ namespace SimpleUI
 			instace.Disposable = false;
             new GreenIconButtonMedia().Init(instace);
 			return instace;
-        }
-		
-		
+        }		
     }
 		
-	 public class GreenIconButtonWindowName : WindowName
+	public class GreenIconButtonWindowName : WindowName
     {
         public string Key
         {
@@ -79,7 +77,7 @@ namespace SimpleUI
         }
     }
 	
-	 public partial class WindowNameFactory
+	public partial class WindowNameFactory
     {
         public static WindowName GetGreenIconButtonName()
         {
@@ -90,10 +88,8 @@ namespace SimpleUI
 
     public partial class GreenIconButtonMedia
     {
-        GreenIconButton window;
         public void Init(GreenIconButton instace)
         {
-            window = instace;
 			InitInstance(instace);
         }
 		
@@ -108,6 +104,5 @@ namespace SimpleUI
         {
             WindowManage.GetInstance.AllWindows.Add(new GreenIconButtonWindowName().Key, new GreenIconButtonUIMedia());
         }
-    }
-	
+    }	
 }

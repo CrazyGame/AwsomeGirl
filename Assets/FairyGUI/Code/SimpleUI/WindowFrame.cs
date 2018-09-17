@@ -10,7 +10,7 @@ namespace SimpleUI
 		public GImage m_BackGround;
 		public GImage m_WindowArea;
 		public WindowTitle m_BaseWindow;
-		public GreenSmallButton m_closeButton;
+		public BackButtonTitle m_BackTitleButton;
 
 		public const string URL = "ui://wmafp3a9iicjh";
 		
@@ -38,12 +38,12 @@ namespace SimpleUI
 			m_BackGround = (GImage)this.GetChildAt(0);
 			m_WindowArea = (GImage)this.GetChildAt(1);
 			m_BaseWindow = (WindowTitle)this.GetChildAt(2);
-			m_closeButton = (GreenSmallButton)this.GetChildAt(3);
+			m_BackTitleButton = (BackButtonTitle)this.GetChildAt(3);
 		}
 	}
 		
 
-	public class WindowFrameBundle: FairyGUIBundle
+	public class WindowFrameBundle: AssetBundleResName
     {
 		public string ResName { get { return "WindowFrame"; } }
 		
@@ -59,12 +59,10 @@ namespace SimpleUI
 			instace.Disposable = false;
             new WindowFrameMedia().Init(instace);
 			return instace;
-        }
-		
-		
+        }		
     }
 		
-	 public class WindowFrameWindowName : WindowName
+	public class WindowFrameWindowName : WindowName
     {
         public string Key
         {
@@ -75,7 +73,7 @@ namespace SimpleUI
         }
     }
 	
-	 public partial class WindowNameFactory
+	public partial class WindowNameFactory
     {
         public static WindowName GetWindowFrameName()
         {
@@ -86,10 +84,8 @@ namespace SimpleUI
 
     public partial class WindowFrameMedia
     {
-        WindowFrame window;
         public void Init(WindowFrame instace)
         {
-            window = instace;
 			InitInstance(instace);
         }
 		
@@ -104,6 +100,5 @@ namespace SimpleUI
         {
             WindowManage.GetInstance.AllWindows.Add(new WindowFrameWindowName().Key, new WindowFrameUIMedia());
         }
-    }
-	
+    }	
 }

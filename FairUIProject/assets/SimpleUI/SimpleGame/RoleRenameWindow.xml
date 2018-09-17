@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="1136,640" initName="RoleRenameWindow" adaptationTest="FitSize">
+<component size="1920,1080" initName="RoleRenameWindow" adaptationTest="FitSize">
   <displayList>
     <component id="n2_rxsv" name="BaseWindow" src="iicjh" fileName="Basics/WindowFrame.xml" xy="0,0"/>
     <component id="n5_rxsv" name="IconLoader" src="rxsv1a" fileName="Basics/IconLoader.xml" xy="91,130"/>
-    <component id="n6_rxsv" name="BasicInput" src="hv92u" fileName="Basics/BasicInput.xml" xy="702,450"/>
-    <component id="n8_rxsv" name="RandomName" src="iicji" fileName="Basics/OrangeButton.xml" xy="1025,448" size="75,40">
+    <component id="n6_rxsv" name="BasicInput" src="hv92u" fileName="Basics/BasicInput.xml" xy="810,520">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n8_rxsv" name="RandomName" src="iicji" fileName="Basics/OrangeButton.xml" xy="1129,518" size="75,40">
+      <relation target="n6_rxsv" sidePair="left-left,middle-middle"/>
       <Button title="Random"/>
     </component>
-    <component id="n9_rxsv" name="StartGameButton" src="iicji" fileName="Basics/OrangeButton.xml" xy="930,549">
+    <component id="n9_rxsv" name="StartGameButton" src="iicji" fileName="Basics/OrangeButton.xml" xy="1283,767">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
       <Button title="StartGame" titleFontSize="20"/>
     </component>
   </displayList>

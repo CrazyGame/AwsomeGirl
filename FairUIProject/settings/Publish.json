@@ -2,7 +2,7 @@
 	"binaryFormat":true,
 	"codeGeneration":{
 		"classNamePrefix":"",
-		"codePath":"E:\\AwsomeGirl\\Assets\\FairyGUI\\Code",
+		"codePath":"E:\\GitProject\\AwsomeGirl\\Assets\\FairyGUI\\Code",
 		"codeType":"",
 		"getMemberByName":false,
 		"ignoreNoname":false,
@@ -12,5 +12,5 @@
 	"compressDesc":true,
 	"fileExtension":"",
 	"packageCount":2,
-	"path":"E:\\AwsomeGirl\\Assets\\FairyGUI\\Bundles"
+	"path":"E:\\GitProject\\AwsomeGirl\\Assets\\FairyGUI\\Bundles"
 }

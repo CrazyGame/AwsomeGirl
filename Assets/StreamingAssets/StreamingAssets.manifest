@@ -1,7 +1,10 @@
 ManifestFileVersion: 0
-CRC: 2453544131
+CRC: 610847427
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: simpleui_fui.windowframe
+      Dependencies: {}
+    Info_1:
+      Name: character.role
       Dependencies: {}

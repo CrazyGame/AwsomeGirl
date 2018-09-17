@@ -47,7 +47,7 @@ namespace SimpleUI
 	}
 		
 
-	public class OrangeButtonBundle: FairyGUIBundle
+	public class OrangeButtonBundle: AssetBundleResName
     {
 		public string ResName { get { return "OrangeButton"; } }
 		
@@ -63,12 +63,10 @@ namespace SimpleUI
 			instace.Disposable = false;
             new OrangeButtonMedia().Init(instace);
 			return instace;
-        }
-		
-		
+        }		
     }
 		
-	 public class OrangeButtonWindowName : WindowName
+	public class OrangeButtonWindowName : WindowName
     {
         public string Key
         {
@@ -79,7 +77,7 @@ namespace SimpleUI
         }
     }
 	
-	 public partial class WindowNameFactory
+	public partial class WindowNameFactory
     {
         public static WindowName GetOrangeButtonName()
         {
@@ -90,10 +88,8 @@ namespace SimpleUI
 
     public partial class OrangeButtonMedia
     {
-        OrangeButton window;
         public void Init(OrangeButton instace)
         {
-            window = instace;
 			InitInstance(instace);
         }
 		
@@ -108,6 +104,5 @@ namespace SimpleUI
         {
             WindowManage.GetInstance.AllWindows.Add(new OrangeButtonWindowName().Key, new OrangeButtonUIMedia());
         }
-    }
-	
+    }	
 }
