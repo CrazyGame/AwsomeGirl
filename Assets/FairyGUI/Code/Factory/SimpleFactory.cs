@@ -1,12 +1,15 @@
-﻿public class SimpleFactory
+﻿namespace SimpleUI
 {
-    public static FairyLoadBundle CreateFairyLoadBundle()
+    public partial class SimpleFactory
     {
-        return new FairyLoadBundleImplement();
-    }
+        public static FairyLoadBundle CreateFairyLoadBundle()
+        {
+            return new FairyLoadBundleImplement();
+        }
 
-    public static BundleComplete CreateFairyWindow()
-    {
-        return new FairyStartBundleImplement();
+        public static BundleComplete CreateFairyWindow()
+        {
+            return new FairyStartBundleImplement();
+        }
     }
 }

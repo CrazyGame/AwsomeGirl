@@ -50,6 +50,15 @@ namespace SimpleUI
 		public string ResName { get { return "BackIconButton"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateBackIconButtonResName()
+        {
+            return new BackIconButtonBundle();
+        }
+    }
+	
 
      public class BackIconButtonUIMedia:UIMedia
     {

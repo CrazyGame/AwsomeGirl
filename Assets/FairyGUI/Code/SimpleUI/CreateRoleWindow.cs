@@ -52,6 +52,15 @@ namespace SimpleUI
 		public string ResName { get { return "CreateRoleWindow"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateCreateRoleWindowResName()
+        {
+            return new CreateRoleWindowBundle();
+        }
+    }
+	
 
      public class CreateRoleWindowUIMedia:UIMedia
     {

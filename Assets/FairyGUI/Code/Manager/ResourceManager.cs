@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FairyGUI;
+using UnityEngine.U2D;
 
 namespace SimpleUI
 {
@@ -12,6 +14,88 @@ namespace SimpleUI
         void OnLoadAssetBundle(AssetBundle bundle);
         AssetBundle GetBundle();
     }
+    public interface ResourceAPI
+    {
+        bool ReleaseAsset(string key);
+        IEnumerator LoadAssetBundle(string keyName, DownLoadEventAPI combineLoadHelp);
+    }
+    public interface DownLoadHelpAPI
+    {
+        void OnLoadAssetBundle(AssetBundle bundle);
+        AssetBundle GetBundle();
+    }
+
+    public interface BundleNameAPI
+    {
+        string GetBundleName();
+    }
+
+    public interface BundleReferenceAPI
+    {
+        int ReferenceCount { get; set; }
+        AssetBundle Bundle { get; set; }
+        AssetBundle PlusCount();
+        void InitBundle(AssetBundle assetBundle);
+        bool MinusCount();
+    }
+
+    public interface PathHelperAPI
+    {
+        string AppContentPath();
+    }
+
+    public interface AppStartAPI
+    {
+        void StartApp(MonoBehaviour mono);
+    }
+
+    public partial class SimpleFactory
+    {
+        public static ResourceAPI CreateResourceAPI()
+        {
+            return ResourceInstance.GetInstance;
+        }
+
+        public static DownLoadEventAPI CreateDownLoadEventAPI()
+        {
+            return new DownLoadEventImplement();
+        }
+
+        public static DownLoadHelpAPI CreateDownLoadHelpAPI()
+        {
+            return new DownLoadHelp();
+        }
+
+        public static BundleReferenceAPI CreateBundleReferenceAPI()
+        {
+            return new BundleReference();
+        }
+
+        public static PathHelperAPI CreatePathHelperAPI()
+        {
+            return new PathHelper();
+        }
+
+        public static BundleNameAPI CreateFairyBundleNameAPI()
+        {
+            return new FairyBundleNameImplement();
+        }
+
+        public static AppStartAPI CreateAppStart()
+        {
+            return new SimpleFairyApp();
+        }
+    }
+
+
+    public class FairyBundleNameImplement : BundleNameAPI
+    {
+        public string GetBundleName()
+        {
+            return "simpleui_fui.windowframe";
+        }
+    }
+
 
     public class DownLoadEventImplement :DownLoadEventAPI
     {
@@ -36,7 +120,7 @@ namespace SimpleUI
         }
     }
 
-    public class DownLoadHelp
+    public class DownLoadHelp: DownLoadHelpAPI
     {
         AssetBundle assetBundle = null;
         public void OnLoadAssetBundle(AssetBundle bundle)
@@ -50,7 +134,7 @@ namespace SimpleUI
         }
     }
 
-    public class BundleReference
+    public class BundleReference : BundleReferenceAPI
     {
         public int ReferenceCount { get; set; }
         public AssetBundle Bundle { get; set; }
@@ -83,19 +167,37 @@ namespace SimpleUI
         }
     }
 
-    public class ResourceManager
+    public class PathHelper: PathHelperAPI
     {
-        IEnumerator DownLoadAsset(string assetName, DownLoadHelp downLoadHelper)
+        public string AppContentPath()
         {
-            bool fromLocal = Application.isEditor;
-            string loadpath = string.Format("file://{0}/{1}", Application.streamingAssetsPath, assetName);
-            if (!fromLocal)
+            string path = string.Empty;
+            switch (Application.platform)
             {
-                loadpath = string.Format("https://{0}/{1}", Application.streamingAssetsPath, assetName);
+                case RuntimePlatform.Android:
+                    path =string.Format(@"jar:file://{0}!/assets/",Application.dataPath);
+                    break;
+                case RuntimePlatform.IPhonePlayer:
+                    path = string.Format("file://{0}/Raw/", Application.dataPath);
+                    break;
+                default:
+                    path = string.Format("file://{0}/StreamingAssets/", Application.dataPath);
+                    break;
             }
+            return path;
+        }
+    }
 
+
+    public class ResourceManager :ResourceAPI
+    {
+        IEnumerator DownLoadAsset(string assetName, DownLoadHelpAPI downLoadHelper)
+        {
+            string loadpath = string.Format("{0}/{1}", SimpleFactory.CreatePathHelperAPI().AppContentPath(), assetName);
             WWW assetData = new WWW(loadpath);
             yield return assetData;
+
+            Debug.Log(loadpath);
 
             if (assetData.error != null)
             {
@@ -106,7 +208,7 @@ namespace SimpleUI
             if (assetData.isDone)
             {
                 assetBundle = AssetBundle.LoadFromMemory(assetData.bytes);
-                BundleReference bundleReference = new BundleReference();
+                BundleReferenceAPI bundleReference = SimpleFactory.CreateBundleReferenceAPI();
                 bundleReference.InitBundle(assetBundle);
                 bundlelist.Add(assetName, bundleReference);
                 downLoadHelper.OnLoadAssetBundle(assetBundle);
@@ -128,14 +230,14 @@ namespace SimpleUI
             return false;
         }
 
-        Dictionary<string, BundleReference> bundlelist = new Dictionary<string, BundleReference>();
+        Dictionary<string, BundleReferenceAPI> bundlelist = new Dictionary<string, BundleReferenceAPI>();
         public IEnumerator LoadAssetBundle(string keyName, DownLoadEventAPI combineLoadHelp)
         {
             AssetBundle assetBundle = null;
             bool hasBundle = bundlelist.ContainsKey(keyName) && bundlelist[keyName].Bundle != null;
             if (!hasBundle)
             {
-                DownLoadHelp downLoadHelp = new DownLoadHelp();
+                DownLoadHelpAPI downLoadHelp = SimpleFactory.CreateDownLoadHelpAPI();
                 yield return DownLoadAsset(keyName, downLoadHelp);
             }
 
@@ -148,6 +250,34 @@ namespace SimpleUI
                 combineLoadHelp.OnLoadAssetBundle(assetBundle);
             }
             yield return null;
+        }
+    }
+
+    public class ResourceInstance :SingleInstance<ResourceManager>
+    {
+
+    }
+
+    public class SimpleFairyApp : AppStartAPI
+    {
+        public void StartApp(MonoBehaviour mono)
+        {
+            SimpleUIBinder.BindAll();
+            mono.StartCoroutine(CreateIEnumerator());
+
+        }
+
+        IEnumerator CreateIEnumerator()
+        {
+            BundleNameAPI bundleNameAPI = SimpleFactory.CreateFairyBundleNameAPI();
+            ResourceAPI resourceAPI = SimpleFactory.CreateResourceAPI();
+            DownLoadEventAPI downLoadEventAPI = SimpleFactory.CreateDownLoadEventAPI();
+            downLoadEventAPI.OnLoadBundleDelegate += (AssetBundle bundle) =>
+            {
+                UIPackage.AddPackage(bundle);
+                this.Inst<WindowManage>().OpenWindow(WindowNameFactory.GetLoginWindowName());
+            };
+            yield return resourceAPI.LoadAssetBundle(bundleNameAPI.GetBundleName(), downLoadEventAPI);
         }
     }
 }

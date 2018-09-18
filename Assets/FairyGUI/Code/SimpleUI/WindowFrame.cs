@@ -48,6 +48,15 @@ namespace SimpleUI
 		public string ResName { get { return "WindowFrame"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateWindowFrameResName()
+        {
+            return new WindowFrameBundle();
+        }
+    }
+	
 
      public class WindowFrameUIMedia:UIMedia
     {

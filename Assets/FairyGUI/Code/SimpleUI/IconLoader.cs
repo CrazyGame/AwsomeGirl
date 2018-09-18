@@ -42,6 +42,15 @@ namespace SimpleUI
 		public string ResName { get { return "IconLoader"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateIconLoaderResName()
+        {
+            return new IconLoaderBundle();
+        }
+    }
+	
 
      public class IconLoaderUIMedia:UIMedia
     {

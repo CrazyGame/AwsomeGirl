@@ -48,6 +48,15 @@ namespace SimpleUI
 		public string ResName { get { return "LoginWindow"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateLoginWindowResName()
+        {
+            return new LoginWindowBundle();
+        }
+    }
+	
 
      public class LoginWindowUIMedia:UIMedia
     {

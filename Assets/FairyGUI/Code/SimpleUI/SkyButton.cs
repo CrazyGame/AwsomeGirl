@@ -52,6 +52,15 @@ namespace SimpleUI
 		public string ResName { get { return "SkyButton"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateSkyButtonResName()
+        {
+            return new SkyButtonBundle();
+        }
+    }
+	
 
      public class SkyButtonUIMedia:UIMedia
     {

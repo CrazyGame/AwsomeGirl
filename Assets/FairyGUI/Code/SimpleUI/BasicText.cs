@@ -44,6 +44,15 @@ namespace SimpleUI
 		public string ResName { get { return "BasicText"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateBasicTextResName()
+        {
+            return new BasicTextBundle();
+        }
+    }
+	
 
      public class BasicTextUIMedia:UIMedia
     {

@@ -46,6 +46,15 @@ namespace SimpleUI
 		public string ResName { get { return "BasicInput"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateBasicInputResName()
+        {
+            return new BasicInputBundle();
+        }
+    }
+	
 
      public class BasicInputUIMedia:UIMedia
     {

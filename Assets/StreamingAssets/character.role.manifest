@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2317220441
+CRC: 3565489848
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 05790a5f98d3c56876dc4b9540470cd8
+    Hash: 73a74bb56f8221c95cd98c3045645204
   TypeTreeHash:
     serializedVersion: 2
     Hash: ea5a42e0fd8ea905efa7aa926a3b8944
@@ -14,6 +14,8 @@ ClassTypes:
 - Class: 213
   Script: {instanceID: 0}
 Assets:
+- Assets/ArtAsset/Character/role3.jpg
 - Assets/ArtAsset/Character/role1.jpg
+- Assets/ArtAsset/Character/role0.jpg
 - Assets/ArtAsset/Character/role2.jpg
 Dependencies: []

@@ -11,8 +11,8 @@
       <item/>
       <item/>
     </list>
-    <component id="n11_rxsv" name="Detials" src="rxsv18" fileName="Basics/BasicText.xml" xy="1353,845" size="306,67"/>
-    <component id="n12_rxsv" name="HintText" src="rxsv18" fileName="Basics/BasicText.xml" xy="271,903" size="306,67"/>
+    <component id="n11_rxsv" name="Detials" src="rxsv18" fileName="Basics/BasicText.xml" xy="1125,643" size="306,67"/>
+    <component id="n12_rxsv" name="HintText" src="rxsv18" fileName="Basics/BasicText.xml" xy="144,908" size="306,67"/>
     <component id="n13_rxsv" name="IconLoader" src="rxsv1a" fileName="Basics/IconLoader.xml" xy="178,185" size="584,675"/>
   </displayList>
 </component>

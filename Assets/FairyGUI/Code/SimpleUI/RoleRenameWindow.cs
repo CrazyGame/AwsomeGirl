@@ -50,6 +50,15 @@ namespace SimpleUI
 		public string ResName { get { return "RoleRenameWindow"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateRoleRenameWindowResName()
+        {
+            return new RoleRenameWindowBundle();
+        }
+    }
+	
 
      public class RoleRenameWindowUIMedia:UIMedia
     {

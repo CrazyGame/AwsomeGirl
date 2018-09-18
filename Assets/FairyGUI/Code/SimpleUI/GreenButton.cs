@@ -52,6 +52,15 @@ namespace SimpleUI
 		public string ResName { get { return "GreenButton"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateGreenButtonResName()
+        {
+            return new GreenButtonBundle();
+        }
+    }
+	
 
      public class GreenButtonUIMedia:UIMedia
     {

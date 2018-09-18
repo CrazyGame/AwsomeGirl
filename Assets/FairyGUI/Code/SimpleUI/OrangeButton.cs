@@ -52,6 +52,15 @@ namespace SimpleUI
 		public string ResName { get { return "OrangeButton"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateOrangeButtonResName()
+        {
+            return new OrangeButtonBundle();
+        }
+    }
+	
 
      public class OrangeButtonUIMedia:UIMedia
     {

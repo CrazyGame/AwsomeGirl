@@ -40,6 +40,15 @@ namespace {packageName}
 		public string ResName { get { return "{className}"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName Create{className}ResName()
+        {
+            return new {className}Bundle();
+        }
+    }
+	
 
      public class {className}UIMedia:UIMedia
     {

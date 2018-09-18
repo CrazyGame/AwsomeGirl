@@ -46,6 +46,15 @@ namespace SimpleUI
 		public string ResName { get { return "BasicPassword"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateBasicPasswordResName()
+        {
+            return new BasicPasswordBundle();
+        }
+    }
+	
 
      public class BasicPasswordUIMedia:UIMedia
     {

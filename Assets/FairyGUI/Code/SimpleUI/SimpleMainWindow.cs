@@ -54,6 +54,15 @@ namespace SimpleUI
 		public string ResName { get { return "SimpleMainWindow"; } }
 		
     }
+	
+	public partial class AssetBundleResNameFactory
+    {
+        public static AssetBundleResName CreateSimpleMainWindowResName()
+        {
+            return new SimpleMainWindowBundle();
+        }
+    }
+	
 
      public class SimpleMainWindowUIMedia:UIMedia
     {
