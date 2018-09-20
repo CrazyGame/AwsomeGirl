@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 3140873505
+CRC: 338949206
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -7,4 +7,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_1:
       Name: simpleui_fui.windowframe
+      Dependencies: {}
+    Info_2:
+      Name: payment.coins
       Dependencies: {}

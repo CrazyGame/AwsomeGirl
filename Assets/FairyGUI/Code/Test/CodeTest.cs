@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;
@@ -8,6 +8,10 @@ public class CodeTest {
 
     [Test]
     public void CodeTestSimplePasses() {
+
+
+
+        
 
         // Use the Assert class to test conditions.
     }

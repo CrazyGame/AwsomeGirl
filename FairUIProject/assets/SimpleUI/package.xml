@@ -46,6 +46,21 @@
     <image id="lgbt1f" name="UI_Icon_PlayBackwards.png" path="/ArtAsset/" exported="true" scale="" scale9grid="32,15,64,98"/>
     <component id="lgbt1i" name="BackIconButton.xml" path="/Basics/" exported="true"/>
     <component id="lgbt1j" name="BackButtonTitle.xml" path="/Basics/" exported="true"/>
+    <component id="p9bq1q" name="BuildWindow.xml" path="/SubMainSystem/" exported="true"/>
+    <component id="p9bq1r" name="FightWindow.xml" path="/SubMainSystem/" exported="true"/>
+    <component id="p9bq1s" name="UpgradeWindow.xml" path="/SubMainSystem/" exported="true"/>
+    <component id="p9bq1t" name="BoadWindow.xml" path="/SubMainSystem/" exported="true"/>
+    <component id="p9bq1u" name="ShopWindow.xml" path="/SubSystem/" exported="true"/>
+    <component id="p9bq1v" name="FightRewardWindow.xml" path="/SimpleRewards/" exported="true"/>
+    <component id="p9bq1w" name="TaskWindow.xml" path="/SubSystem/" exported="true"/>
+    <component id="p9bq1x" name="FriendWindow.xml" path="/SubSystem/" exported="true"/>
+    <component id="p9bq1z" name="FightRecord.xml" path="/SubSystem/" exported="true"/>
+    <component id="p9bq26" name="RoleSourceWindow.xml" path="/SubSystem/" exported="true"/>
+    <component id="p9bq27" name="SettingWindow.xml" path="/SubSystem/" exported="true"/>
+    <component id="p9bq29" name="LoginRewardWindow.xml" path="/SimpleRewards/" exported="true"/>
+    <component id="p9bq2a" name="UpgradeRewardWindow.xml" path="/SimpleRewards/" exported="true"/>
+    <component id="p9bq2b" name="FirstPayRewardWindow.xml" path="/SimpleRewards/" exported="true"/>
+    <component id="p9bq2c" name="IconTitleLoader.xml" path="/Basics/" exported="true"/>
   </resources>
   <publish name="SimpleUI" genCode="true"/>
 </packageDescription>

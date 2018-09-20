@@ -1,14 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FairyGUI;
-using System;
-
-public class FairyGUIBundleName
-{
-    public const string BundleName = "simpleui_fui.windowframe";
-}
-
+using SimpleUI;
 
 public struct BundleReferenceStruct
 {
@@ -131,7 +125,7 @@ public class FairyLoadBundleImplement : FairyLoadBundle,BundleComplete
    {
         if(!this.LoadBundle())
         {
-            yield return AssetFromBundle(FairyGUIBundleName.BundleName,this);
+            yield return AssetFromBundle(BundleConst.WindowframeBundleName ,this);
 
                 T instance = new T();
                 UIPackage bundlePackage = UIPackage.GetByName(instance.ResName);

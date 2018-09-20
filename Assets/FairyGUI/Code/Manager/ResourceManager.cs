@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FairyGUI;
@@ -197,7 +197,7 @@ namespace SimpleUI
             WWW assetData = new WWW(loadpath);
             yield return assetData;
 
-            Debug.Log(loadpath);
+           // Debug.Log(loadpath);
 
             if (assetData.error != null)
             {
@@ -269,7 +269,6 @@ namespace SimpleUI
 
         IEnumerator CreateIEnumerator()
         {
-            BundleNameAPI bundleNameAPI = SimpleFactory.CreateFairyBundleNameAPI();
             ResourceAPI resourceAPI = SimpleFactory.CreateResourceAPI();
             DownLoadEventAPI downLoadEventAPI = SimpleFactory.CreateDownLoadEventAPI();
             downLoadEventAPI.OnLoadBundleDelegate += (AssetBundle bundle) =>
@@ -277,7 +276,23 @@ namespace SimpleUI
                 UIPackage.AddPackage(bundle);
                 this.Inst<WindowManage>().OpenWindow(WindowNameFactory.GetLoginWindowName());
             };
-            yield return resourceAPI.LoadAssetBundle(bundleNameAPI.GetBundleName(), downLoadEventAPI);
+            yield return resourceAPI.LoadAssetBundle(BundleConst.WindowframeBundleName, downLoadEventAPI);
+        }
+    }
+
+    public class AssetHelper
+    {
+        public static IEnumerator DownLoadAssetBundle(string bundleName, OnLoadBundleFinish onLoadBundleFinish)
+        {
+            ResourceAPI resourceAPI = SimpleFactory.CreateResourceAPI();
+            DownLoadEventAPI downLoadEventAPI = SimpleFactory.CreateDownLoadEventAPI();
+            downLoadEventAPI.OnLoadBundleDelegate += onLoadBundleFinish;
+            yield return resourceAPI.LoadAssetBundle(bundleName, downLoadEventAPI);
+        }
+
+        public static void RunDownLoadBundle(string bundleName, OnLoadBundleFinish onLoadBundleFinish)
+        {
+             MonoInst.RunConrotine(DownLoadAssetBundle(bundleName, onLoadBundleFinish));
         }
     }
 }

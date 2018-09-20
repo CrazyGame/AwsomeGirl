@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using FairyGUI;
 
 namespace SimpleUI
@@ -10,6 +10,8 @@ namespace SimpleUI
         GObject[] allButtons;
 
         string[] detailInfo = { "Role0Info", "Role1Info", "Role2Info", "Role3Info" };
+
+        int selectIndex = 0;
 
         partial void InitInstance(CreateRoleWindow instace)
         {
@@ -46,7 +48,8 @@ namespace SimpleUI
 
         void EventCallback1(EventContext context)
         {
-            int index = FairTools.GetGListItemIndex(context.data,allButtons);           
+            int index = FairTools.GetGListItemIndex(context.data,allButtons);
+            selectIndex = index;
             SetTexture(index);
             SetDetailInfo(index);
         }
@@ -68,6 +71,7 @@ namespace SimpleUI
 
         void HandleNextClick()
         {
+            SingleInstance<CurrentPlayIndex>.GetInstance.index = selectIndex;
             WindowManage.GetInstance.OpenWindow(WindowNameFactory.GetRoleRenameWindowName());
         }
     }

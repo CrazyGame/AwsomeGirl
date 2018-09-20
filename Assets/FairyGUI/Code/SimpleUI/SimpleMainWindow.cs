@@ -14,6 +14,8 @@ namespace SimpleUI
 		public GreenButton m_BuildButton;
 		public IconLoader m_RoleIcon;
 		public GList m_ButtomButtons;
+		public GList m_HideButtons;
+		public GList m_TopValues;
 
 		public const string URL = "ui://wmafp3a9qdiw1b";
 		
@@ -45,6 +47,8 @@ namespace SimpleUI
 			m_BuildButton = (GreenButton)this.GetChildAt(4);
 			m_RoleIcon = (IconLoader)this.GetChildAt(5);
 			m_ButtomButtons = (GList)this.GetChildAt(6);
+			m_HideButtons = (GList)this.GetChildAt(7);
+			m_TopValues = (GList)this.GetChildAt(8);
 		}
 	}
 		

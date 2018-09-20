@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e554ace5b237dc74c8adfe372eb59634
+guid: 9d25ef1cfdb2ef64696ea73383d832e6
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -75,7 +75,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 041fc94c9d73db84c9e0c0c91d3615c0
+    spriteID: 94ee799fb78331b4397020c4352c89c8
     vertices: []
     indices: 
     edges: []
@@ -84,5 +84,5 @@ TextureImporter:
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
   userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  assetBundleName: payment
+  assetBundleVariant: coins

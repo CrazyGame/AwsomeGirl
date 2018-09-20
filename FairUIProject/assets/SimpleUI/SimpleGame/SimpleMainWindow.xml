@@ -3,28 +3,42 @@
   <displayList>
     <image id="n2_qdiw" name="BackGround" src="iicjd" fileName="ArtAsset/UI_Panel_Window.png" xy="0,0" size="1920,1080"/>
     <component id="n4_qdiw" name="FightButton" src="iicjg" fileName="Basics/GreenButton.xml" xy="1578,156">
-      <relation target="" sidePair="right-right,top-top"/>
+      <relation target="" sidePair="right-left,top-top"/>
       <Button title="Fight" titleFontSize="30"/>
     </component>
     <component id="n5_qdiw" name="HomeButton" src="iicjg" fileName="Basics/GreenButton.xml" xy="1578,312">
-      <relation target="" sidePair="right-right,top-top"/>
+      <relation target="" sidePair="right-left,top-top"/>
       <Button title="Home" titleFontSize="30"/>
     </component>
     <component id="n6_qdiw" name="ModifyButton" src="iicjg" fileName="Basics/GreenButton.xml" xy="1655,234">
-      <relation target="" sidePair="right-right,top-top"/>
+      <relation target="" sidePair="right-left,top-top"/>
       <Button title="Modify" titleFontSize="30"/>
     </component>
     <component id="n7_qdiw" name="BuildButton" src="iicjg" fileName="Basics/GreenButton.xml" xy="1477,234">
-      <relation target="" sidePair="right-right,top-top"/>
+      <relation target="" sidePair="right-left,top-top"/>
       <Button title="Create" titleFontSize="30"/>
     </component>
-    <component id="n9_qdiw" name="RoleIcon" src="rxsv1a" fileName="Basics/IconLoader.xml" xy="278,296"/>
-    <list id="n12_qdiw" name="ButtomButtons" xy="30,1010" size="646,60" layout="flow_hz" overflow="scroll" colGap="10" align="center" vAlign="middle">
+    <component id="n9_qdiw" name="RoleIcon" src="rxsv1a" fileName="Basics/IconLoader.xml" xy="228,183" size="786,591"/>
+    <list id="n12_qdiw" name="ButtomButtons" xy="54,972" size="646,60" layout="flow_hz" overflow="scroll" colGap="10" align="center" vAlign="middle">
       <relation target="" sidePair="left-left,bottom-bottom"/>
       <item url="ui://wmafp3a9iicjg" title="Shop" name="Shop"/>
-      <item url="ui://wmafp3a9iicjg" title="Active"/>
-      <item url="ui://wmafp3a9iicjg" title="Task"/>
-      <item url="ui://wmafp3a9iicjg" title="Friend"/>
+      <item url="ui://wmafp3a9iicjg" title="Active" name="Active"/>
+      <item url="ui://wmafp3a9iicjg" title="Task" name="Task"/>
+      <item url="ui://wmafp3a9iicjg" title="Friend" name="Friend"/>
+    </list>
+    <list id="n13_p9bq" name="HideButtons" xy="65,854" size="508,60" layout="flow_hz" overflow="scroll" colGap="10" align="center" vAlign="middle">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <item url="ui://wmafp3a9iicjg" title="FightRecord" name="FightRecord"/>
+      <item url="ui://wmafp3a9iicjg" title="RoleSource" name="RoleSource"/>
+      <item url="ui://wmafp3a9iicjg" title="Settings" name="Settings"/>
+    </list>
+    <list id="n15_p9bq" name="TopValues" xy="850,0" size="1000,50" layout="row" overflow="scroll">
+      <relation target="" sidePair="rightext-right,top-top"/>
+      <item url="ui://wmafp3a9p9bq2c" name="ValueA"/>
+      <item url="ui://wmafp3a9p9bq2c" name="ValueB"/>
+      <item url="ui://wmafp3a9p9bq2c" name="ValueC"/>
+      <item url="ui://wmafp3a9p9bq2c" name="ValueD"/>
+      <item url="ui://wmafp3a9p9bq2c" name="Coins"/>
     </list>
   </displayList>
 </component>

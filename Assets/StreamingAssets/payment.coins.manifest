@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 4088463402
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e167b4753bef6cde8b594e4ad2bf8ffa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/ArtAsset/PaymentIcon/UI_Icon_Confirm.png
+- Assets/ArtAsset/PaymentIcon/UI_Icon_CurrencDollar.png
+- Assets/ArtAsset/PaymentIcon/UI_Icon_Crown.png
+- Assets/ArtAsset/PaymentIcon/UI_Icon_Compass.png
+- Assets/ArtAsset/PaymentIcon/UI_Icon_Coin.png
+Dependencies: []
