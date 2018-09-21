@@ -1,0 +1,26 @@
+<#@ template language="C#" debug="True" #>
+<#@ output extension="cs" #>
+<#@ include file="T4Toolbox.tt" #>
+
+<#
+// <copyright file="Products_Delete.tt" company="CrazeGame">
+//  Copyright © . All Rights Reserved.
+// </copyright>
+#>
+
+<#
+    string className= "TemplemateTest";
+    string space= "SimpleUI";
+    
+#>
+
+namespace <#=space#>
+{
+    public class <#=className#>
+    {
+
+    }
+}
+   
+
+

@@ -1,0 +1,23 @@
+﻿<#@ import namespace="System.Collections.Generic" #>
+<#@ include file="BaseTemplate.tt" #>
+<#+
+public class CodeGenerator : Generator
+{
+    public BaseTemplate baseTemplate = new BaseTemplate();
+
+    protected override void RunCore()
+    {
+        List<string> classNames = new List<string>()
+        {
+            "Cat",
+            "Dog"
+        };
+
+        foreach (string className in classNames)
+        {
+            this.baseTemplate.className = className;
+            this.baseTemplate.RenderToFile(String.Format("{0}.cs", className));
+        }
+    }
+}
+#>

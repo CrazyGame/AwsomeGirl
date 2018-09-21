@@ -1,0 +1,14 @@
+﻿<#+
+// <copyright file="UnityTemplemateGenerator.tt" company="CrazeGame">
+//  Copyright © . All Rights Reserved.
+// </copyright>
+    
+public class UnityTemplemateGenerator : Generator
+{
+	protected override void RunCore()
+	{
+
+	}
+}
+    
+#>
