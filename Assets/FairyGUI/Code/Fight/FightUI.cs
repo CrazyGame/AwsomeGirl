@@ -1,29 +1,27 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 namespace SimpleUI
 {
     public class FightUI : MonoBehaviour
     {
 
-
         public Button testButton;
+        public Transform MoveUnitParent;
 
-        public RectTransform followTarget;
-        MoveUIUnit moveUIUnit;
-        private void Start()
-        {
-            moveUIUnit = new MoveUIUnit(followTarget);
-            testButton.onClick.AddListener(() => 
-            {
-                moveUIUnit.ResetPostion();
-            });
-        }
+		private void Start()
+		{
+			
+		}
+	}
 
-        private void FixedUpdate()
-        {
-            moveUIUnit.StarMove();
-        }
+
+
+    public class MoveUnitManger
+    {
+        public MoveUIUnit PlayerMoveUnit { get; set; }
+        public MoveUIUnit EnemyMoveUnit { get; set; }
     }
 
     public class MoveUIUnit
@@ -33,7 +31,25 @@ namespace SimpleUI
         public float maxPostion = 770.0f;
         Vector2 InitPostion = Vector2.zero;
 
-        bool startMove = false;
+        bool loopingMove = false;
+
+        FightUnit fightUnit;
+
+        public MoveUIUnit(FightUnit fightUnit,Transform targetParent)
+        {
+            this.fightUnit = fightUnit;
+            GameObject moveUnitGo = new GameObject(fightUnit.SpriteAssetName.Name);
+            target = moveUnitGo.AddComponent<RectTransform>();
+            moveUnitGo.transform.SetParent(targetParent);
+            Image image = moveUnitGo.AddComponent<Image>();
+            image.sprite = fightUnit.SpriteUnitIcon.GetSprite();
+
+            target.sizeDelta = new Vector2(32, 64);
+            target.anchoredPosition = new Vector2(0, -38);
+            target.anchorMin = new Vector2(0, 1);
+            target.anchorMax = new Vector2(0, 1);
+
+        }
 
         public MoveUIUnit(RectTransform target)
         {
@@ -41,24 +57,35 @@ namespace SimpleUI
             InitPostion = target.anchoredPosition;
         }
 
-        public void StarMove()
+
+        public void StartMovement()
         {
-            if(!startMove)
+            loopingMove = true;
+        }
+
+        public void EndMovement()
+        {
+            loopingMove = false;
+        }
+
+        public void LoopMovement()
+        {
+            if(loopingMove)
             {
                 bool finishmove = FinishMovement();
                 if(finishmove)
                 {
-                    startMove = true;
+                    loopingMove = false;
                 }
             }
         }
 
         public void ResetPostion()
         {
-            if(startMove)
+            if(loopingMove)
             {
                 target.anchoredPosition = InitPostion;
-                startMove = false;
+                loopingMove = false;
             }        
         }
 

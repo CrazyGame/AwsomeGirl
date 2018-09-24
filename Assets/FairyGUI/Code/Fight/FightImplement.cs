@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using UnityEngine.UI;
+using UnityEngine;
 
 namespace SimpleUI
 {
@@ -7,6 +9,12 @@ namespace SimpleUI
         public FightElement fightElement { get; set; }
         public FightUnitHud fightUnitHud { get; set; }
         public ReachedGoal reachedGoal { get; set; }
+
+        public UnitName SpriteAssetName { get; set; }
+
+        public UnitIcon SpriteUnitIcon { get; set; }
+
+
 
 
         public List<FightUnit> TargetFightUnits = new List<FightUnit>();
@@ -35,6 +43,22 @@ namespace SimpleUI
         }
 
         public AttackAmount AttackAmount = new AttackAmount();
+    }
+
+
+
+    public class UnitName
+    {
+        public string Name { get; set; }
+    }
+
+    public class UnitIcon
+    {
+        public string IconName { get; set; }
+        public Sprite GetSprite()
+        {
+            return Resources.Load<Sprite>(IconName);
+        }
     }
 
 
@@ -90,19 +114,31 @@ namespace SimpleUI
         FightTeam PlayerFightUnits = new FightTeam();
         FightTeam EnemyFightUnits = new FightTeam();
 
+
+
+        public FightTeam PlayerTeam{ get { return PlayerFightUnits; }}
+        public FightTeam EnemyTeam { get { return EnemyFightUnits; } }
+
+
         public void BuildTeam()
         {
+           
             FightUnitHud playerHud = new FightUnitHud();
             FightElement playerFightElement = new FightElement();
             playerFightElement.AttackPower = 15;
             playerFightElement.Speed = 15;
             ReachedGoal playerreachedGoal = new ReachedGoal(TotalAmountToReached);
 
+
+
             FightUnit playerFightUnit = new FightUnit()
             {
                 fightElement = playerFightElement,
                 fightUnitHud = playerHud,
-                reachedGoal = playerreachedGoal
+                reachedGoal = playerreachedGoal,
+                SpriteAssetName = new UnitName() { Name = "playericon" },
+
+                SpriteUnitIcon = new UnitIcon(){IconName ="playericon"},
             };
 
             FightUnitHud emenyHud = new FightUnitHud();
@@ -113,7 +149,10 @@ namespace SimpleUI
             {
                 fightElement = emenyFightElement,
                 fightUnitHud = emenyHud,
-                reachedGoal = emenyReachedGoal
+                reachedGoal = emenyReachedGoal,
+                SpriteAssetName = new UnitName() { Name = "enemyicon" },
+                SpriteUnitIcon = new UnitIcon() { IconName = "enemyicon" },
+
             };
 
             playerFightUnit.TargetFightUnits.Add(emenyFightUnit);
@@ -121,7 +160,6 @@ namespace SimpleUI
 
             PlayerFightUnits.fightUnit = playerFightUnit;
             EnemyFightUnits.fightUnit = emenyFightUnit;
-
         }
 
         public void Fight()
