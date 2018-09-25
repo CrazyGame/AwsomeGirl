@@ -1,20 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
+using Image = UnityEngine.UI.Image;
+using FairyGUI;
 
 namespace SimpleUI
 {
+
+    
     public class FightUI : MonoBehaviour
     {
-
         public Button testButton;
         public Transform MoveUnitParent;
-
-		private void Start()
-		{
-			
-		}
-	}
+    }
 
 
 
@@ -29,6 +26,8 @@ namespace SimpleUI
         public RectTransform target;
         public float spriteMoveSpeed = 770.0f;
         public float maxPostion = 770.0f;
+        public float nextRoundPostion = 0;
+        public float RoundAddtion = 385.0f;
         Vector2 InitPostion = Vector2.zero;
 
         bool loopingMove = false;
@@ -58,9 +57,30 @@ namespace SimpleUI
         }
 
 
+        bool returnBack = false;
+
         public void StartMovement()
         {
             loopingMove = true;
+            nextRoundPostion += RoundAddtion;
+
+            if (nextRoundPostion >= maxPostion)
+            {
+                nextRoundPostion = maxPostion;
+                returnBack = true;
+            }
+
+            Vector2 targetPostion = new Vector2(nextRoundPostion, target.anchoredPosition.y);
+
+            GTween.To(target.anchoredPosition, targetPostion, 1).SetTarget(target).
+                OnUpdate((tweener) =>
+            {
+                target.anchoredPosition = tweener.value.vec2;
+            }).
+                OnComplete(()=> {
+                   
+
+            });
         }
 
         public void EndMovement()
@@ -96,8 +116,8 @@ namespace SimpleUI
             {
                 Vector2 tempPostion = target.anchoredPosition;
                 tempPostion.x += spriteMoveSpeed * Time.deltaTime;
-                if (tempPostion.x >= maxPostion)
-                {
+                if (tempPostion.x >= nextRoundPostion)
+                {                   
                     target.anchoredPosition = tempPostion;
                     return true;
                 }
