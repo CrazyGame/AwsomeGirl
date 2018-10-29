@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using NUnit.Framework;
 
 public class FightPrototoUI : MonoBehaviour
 {
@@ -187,10 +186,9 @@ public class ActorIconManger : IActorManger
         get;set;
     }
 
-    [Test]
+
     public void DoAction()
     {
-        Assert.AreEqual(valiedClass.IsValied, true);
 
         if (!valiedClass.IsValied) return;
         List<ActorIconRole> actorIconRoles = new List<ActorIconRole>();
@@ -236,10 +234,8 @@ public class ActorFightManger : IActorManger
         valiedClass.IsValied = isValied;
     }
 
-    [Test]
     public void DoAction()
     {
-        Assert.AreEqual(valiedClass.IsValied, true);
 
         if (valiedClass.IsValied)
         {
@@ -289,10 +285,8 @@ public class ActorCommandManger : IActorManger
         valiedClass.IsValied = isValied;
     }
 
-    [Test]
     public void DoAction()
     {
-        Assert.AreEqual(valiedClass.IsValied, true);
         valiedClass.IsValied = false;
         Next.IsValid(true);
         Next.DoAction();

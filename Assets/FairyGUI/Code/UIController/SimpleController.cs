@@ -1,40 +1,24 @@
 ﻿using UnityEngine;
-using System.Collections;
+using FairyGUI;
+using UnityEngine.UI;
 
 namespace SimpleUI
 {
     public class SimpleController : MonoBehaviour
     {
+        public static SimpleController Instance;
+        public Text DebugText;
+        public static void AddGUIDebug(string info)
+        {
+            Instance.DebugText.text += info;
+        }
         private void Start()
         {
+            Instance = this;
+            UIObjectFactory.SetLoaderExtension(typeof(MyGLoader));
             MonoInst.SetupMono(this);
-            SimpleFactory.CreateAppStart().StartApp(this);
-            //FairyLoadBundle fairyLoadBundle = SimpleFactory.CreateFairyLoadBundle();
-            //BundleComplete fairyWindow = SimpleFactory.CreateFairyWindow();
-            //StartCoroutine(fairyLoadBundle.DownLoadData<LoginWindowBundle>(fairyWindow));
+            SimpleFactory.CreateAppStart().StartApp(this);        
         }
     }
-
-    public class MonoInst:SingleInstance<MonoInst>
-    {
-        MonoBehaviour MonoReference { get; set; }
-
-        public static void SetupMono(MonoBehaviour monoBehaviour)
-        {
-            GetInstance.MonoReference = monoBehaviour;
-        }
-
-        public static void RunConrotine(IEnumerator coroutine)
-        {
-            GetInstance.MonoReference.StartCoroutine(coroutine);
-        }
-
-        public static void StopConrotine(IEnumerator coroutine)
-        {
-            GetInstance.MonoReference.StopCoroutine(coroutine);
-        }
-    }
-
-
 }
 

@@ -13,6 +13,7 @@ namespace SimpleUI
 		public BasicText m_Detials;
 		public BasicText m_HintText;
 		public IconLoader m_IconLoader;
+		public GRichTextField m_htmlText;
 
 		public const string URL = "ui://wmafp3a9rxsvw";
 		
@@ -43,6 +44,7 @@ namespace SimpleUI
 			m_Detials = (BasicText)this.GetChildAt(3);
 			m_HintText = (BasicText)this.GetChildAt(4);
 			m_IconLoader = (IconLoader)this.GetChildAt(5);
+			m_htmlText = (GRichTextField)this.GetChildAt(6);
 		}
 	}
 		

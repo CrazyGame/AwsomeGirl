@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FairyGUI;
-using UnityEngine.U2D;
-
 namespace SimpleUI
 {
     public delegate void OnLoadBundleFinish(AssetBundle bundle);
@@ -175,7 +173,7 @@ namespace SimpleUI
             switch (Application.platform)
             {
                 case RuntimePlatform.Android:
-                    path =string.Format(@"jar:file://{0}!/assets/",Application.dataPath);
+                    path = @"jar:file://" + Application.dataPath + "!/assets/";
                     break;
                 case RuntimePlatform.IPhonePlayer:
                     path = string.Format("file://{0}/Raw/", Application.dataPath);
@@ -194,6 +192,7 @@ namespace SimpleUI
         IEnumerator DownLoadAsset(string assetName, DownLoadHelpAPI downLoadHelper)
         {
             string loadpath = string.Format("{0}/{1}", SimpleFactory.CreatePathHelperAPI().AppContentPath(), assetName);
+            Debug.Log(loadpath);
             WWW assetData = new WWW(loadpath);
             yield return assetData;
 

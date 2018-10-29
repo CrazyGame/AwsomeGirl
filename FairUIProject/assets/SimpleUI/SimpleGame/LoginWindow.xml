@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="1920,1080" initName="LoginWindow" adaptationTest="FitSize">
+<component size="1920,1080" initName="LoginWindow" remark="this is the html test" adaptationTest="FitSize">
   <displayList>
-    <component id="n0_hv92" name="BaseWindow" src="iicjh" fileName="Basics/WindowFrame.xml" xy="2,-6"/>
-    <component id="n2_hv92" name="Acount" src="hv92u" fileName="Basics/BasicInput.xml" xy="810,445" group="n5_lgbt"/>
-    <component id="n3_hv92" name="Password" src="hv92v" fileName="Basics/BasicPassword.xml" xy="810,510" group="n5_lgbt"/>
-    <component id="n4_hv92" name="LoginButton" src="iicjg" fileName="Basics/GreenButton.xml" xy="842,584" size="236,50" group="n5_lgbt">
+    <component id="n0_hv92" name="BaseWindow" src="iicjh" fileName="Basics/WindowFrame.xml" xy="2,-6" locked="true"/>
+    <component id="n2_hv92" name="Acount" src="hv92u" fileName="Basics/BasicInput.xml" xy="810,445" group="n5_lgbt" locked="true"/>
+    <component id="n3_hv92" name="Password" src="hv92v" fileName="Basics/BasicPassword.xml" xy="810,510" group="n5_lgbt" locked="true"/>
+    <component id="n4_hv92" name="LoginButton" src="iicjg" fileName="Basics/GreenButton.xml" xy="842,584" size="236,50" group="n5_lgbt" locked="true">
       <Button title="Login" titleFontSize="20"/>
     </component>
-    <group id="n5_lgbt" name="Ground" xy="810,445" size="300,189"/>
+    <group id="n5_lgbt" name="Ground" xy="810,445" size="300,189" locked="true"/>
+    <richtext id="n6_wl79" name="HtmlText" xy="26,82" size="800,800" fontSize="30" autoSize="none" text="this  is the test"/>
   </displayList>
 </component>

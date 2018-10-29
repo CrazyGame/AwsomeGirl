@@ -11,6 +11,7 @@ namespace SimpleUI
 		public BasicInput m_Acount;
 		public BasicPassword m_Password;
 		public GreenButton m_LoginButton;
+		public GRichTextField m_HtmlText;
 
 		public const string URL = "ui://wmafp3a9hv92r";
 		
@@ -39,6 +40,7 @@ namespace SimpleUI
 			m_Acount = (BasicInput)this.GetChildAt(1);
 			m_Password = (BasicPassword)this.GetChildAt(2);
 			m_LoginButton = (GreenButton)this.GetChildAt(3);
+			m_HtmlText = (GRichTextField)this.GetChildAt(4);
 		}
 	}
 		

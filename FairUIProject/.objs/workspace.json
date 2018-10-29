@@ -1,29 +1,17 @@
 {
+	"active_doc": [
+		"wmafp3a9",
+		"rxsvw"
+	],
+	"hidden_packages": [],
 	"docs": [
 		"wmafp3a9",
-		"qdiw1b",
+		"hv92r",
 		"wmafp3a9",
-		"rxsvw",
-		"wmafp3a9",
-		"rxsv18",
-		"wmafp3a9",
-		"p9bq1q",
-		"wmafp3a9",
-		"p9bq1v",
-		"wmafp3a9",
-		"p9bq2b",
-		"wmafp3a9",
-		"iicjg",
-		"wmafp3a9",
-		"p9bq2c"
+		"rxsvw"
 	],
 	"expanded_nodes": [
 		"wmafp3a9",
 		"/"
-	],
-	"active_doc": [
-		"wmafp3a9",
-		"qdiw1b"
-	],
-	"hidden_packages": []
+	]
 }
